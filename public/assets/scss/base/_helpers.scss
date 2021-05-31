@@ -1,0 +1,31 @@
+.weight-500{
+  font-weight: 500 !important;
+}
+
+.white{
+  color: $light-grey !important;
+}
+.red{
+  color: $primary-color !important;
+}
+.yellow{
+  color: $secondary-color !important;
+}
+
+.app__border{
+  height: .1rem;
+  background-color:$mid-grey;
+}
+
+.text__small{
+  font-size: 12px !important;
+}
+
+.helper__color{
+ color: $mid-grey !important;
+}
+//container
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

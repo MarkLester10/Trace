@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+// Banner
+.banner {
+  grid-area: banner;
+    background-color: $light-grey;
+  padding: 3rem auto;
+  @media screen and (max-width: 768px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

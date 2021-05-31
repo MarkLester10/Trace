@@ -1,0 +1,54 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% /2rem $poppins;
+  letter-spacing: .5px;
+  font-size: 1.6rem;
+  min-height: 100vh !important;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  background: url('../imgs/bg-image.png') no-repeat center center/cover;
+}
+
+a{
+  font-weight: 500;
+  font-size: 1.6rem;
+  @media screen and (max-width: 640px) {
+    font-size: 1.4rem;
+  }
+}
+
+.title__text {
+  font: normal 125% /4rem $poppins;
+  letter-spacing: 0.2rem;
+  font-size: 2em;
+  font-weight: bold;
+  color: $text-color;
+  z-index: 50 !important;
+}
+
+.subtitle__text {
+  font: normal 125% /3rem $poppins;
+  font-size: 1.8rem;
+  color: $text-color;
+  font-weight: bold;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+
+.para {
+  font: normal 125% /2.5rem $poppins;
+  font-size: 1.6rem;
+  color: $black;
+  letter-spacing: .5px;
+
+  @media screen and (max-width: 640px) {
+    font-size: 1.4rem;
+  }
+}

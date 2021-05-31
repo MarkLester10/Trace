@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$poppins: "Poppins", sans-serif !default;
+
+
+
+/// Text color
+/// @type Color
+$text-color: #212121 !default;
+
+/// Primary  color
+/// @type Color
+$primary-color: #E93658 !default;
+
+/// Secondary  color
+/// @type Color
+$secondary-color: #FFA518 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #f9fafc !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #BBCBD8 !default;
+
+/// red
+/// @type Color
+$red: rgb(247, 71, 71) !default;
+
+/// blue
+/// @type Color
+$blue: #2A9CFF !default;
+
+/// black
+/// @type Color
+$black: #30323C !default;

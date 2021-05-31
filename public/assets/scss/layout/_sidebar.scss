@@ -1,0 +1,14 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: $black;
+  overflow: hidden;
+  position: relative;
+  padding: 4rem 0;
+  @media screen and (max-width: 768px) {
+    display: none;
+  } 
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

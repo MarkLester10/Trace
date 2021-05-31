@@ -1,0 +1,35 @@
+.card{
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  text-align:center;
+  overflow: hidden;
+}
+
+.card__blue{
+@extend .card;
+border: 5px solid $blue;
+}
+
+.card__yellow{
+@extend .card;
+border: 5px solid $secondary-color;
+}
+
+.card__red{
+@extend .card;
+border: 5px solid $primary-color;
+}
+
+.card__link:hover{
+  & .card > img{
+    transform:scale(1.2);
+    transition:all 1s ease;
+  }
+  & > img{
+    transform:scale(1.2);
+    transition:all 1s ease;
+  }
+}

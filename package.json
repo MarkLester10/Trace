@@ -1,0 +1,23 @@
+{
+  "name": "krb_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "postcss public/assets/scss/vendors/tailwind.css -o public/assets/css/tailwind.output.css",
+    "build": "env NODE_ENV=production postcss public/assets/scss/vendors/tailwind.css -o public/assets/css/tailwind.output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.2",
+    "autoprefixer": "^10.2.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "cssnano": "^5.0.5",
+    "postcss": "^8.3.0"
+  }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trace</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  </head>
+  <body x-data="{ open: false }">
+    <div class="grid__container">
+
+      <!-- header -->
+      <div class="banner border-b-2 flex items-center">
+        <div
+          class="container mx-auto flex items-center justify-between"
+        >
+        <div>
+          <div class="block lg:hidden">
+            <img
+            src="./assets/imgs/logo_black.png"
+            class="w-64"
+            alt="Kuyang Rey Beer Below Zero"
+          />
+          </div>
+        </div>
+      <div class="hidden lg:block">
+        <ul class="flex flex-wrap items-center justify-center md:justify-items-auto space-x-8">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">FAQs</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+          <li>
+            <a href="#" class="btn__primary rounded-full">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block lg:hidden cursor-pointer"  @click="open = true">
+        <svg class="w-16 h-16 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+      </div>
+        </div>
+      </div>
+
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="container mx-auto relative h-full">
+            <div class="sidebar__logo">
+              <img
+                src="./assets/imgs/logo.png"
+                class="w-11/12 object-cover"
+                alt="Kuyang Rey Beer Below Zero"
+              />
+            </div>
+            <p class="para mt-12 white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga odio aliquam laboriosam voluptatum quia, mollitia ipsa incidunt nisi, ex aliquid quisquam dolor expedita autem laudantium voluptates, laborum vitae nam! Adipisci nostrum doloribus cum tenetur quisquam quos odio? Earum ea ducimus quaerat nesciunt exercitationem ipsam harum rem doloribus porro laudantium?</p>
+            <div class="absolute bottom-0 right-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-40" viewBox="0 0 172 130">
+                <g id="Group_2" data-name="Group 2" transform="translate(-288 -897.975)">
+                  <circle id="Ellipse_1" data-name="Ellipse 1" cx="7" cy="7" r="7" transform="translate(288 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_10" data-name="Ellipse 10" cx="7" cy="7" r="7" transform="translate(288 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_15" data-name="Ellipse 15" cx="7" cy="7" r="7" transform="translate(288 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_20" data-name="Ellipse 20" cx="7" cy="7" r="7" transform="translate(288 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_2" data-name="Ellipse 2" cx="7" cy="7" r="7" transform="translate(327 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_9" data-name="Ellipse 9" cx="7" cy="7" r="7" transform="translate(327 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_14" data-name="Ellipse 14" cx="7" cy="7" r="7" transform="translate(327 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_19" data-name="Ellipse 19" cx="7" cy="7" r="7" transform="translate(327 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_3" data-name="Ellipse 3" cx="7" cy="7" r="7" transform="translate(367 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_8" data-name="Ellipse 8" cx="7" cy="7" r="7" transform="translate(367 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_11" data-name="Ellipse 11" cx="7" cy="7" r="7" transform="translate(367 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_16" data-name="Ellipse 16" cx="7" cy="7" r="7" transform="translate(367 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_4" data-name="Ellipse 4" cx="7" cy="7" r="7" transform="translate(406 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_6" data-name="Ellipse 6" cx="7" cy="7" r="7" transform="translate(406 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_12" data-name="Ellipse 12" cx="7" cy="7" r="7" transform="translate(406 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_17" data-name="Ellipse 17" cx="7" cy="7" r="7" transform="translate(406 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_5" data-name="Ellipse 5" cx="7" cy="7" r="7" transform="translate(446 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_7" data-name="Ellipse 7" cx="7" cy="7" r="7" transform="translate(446 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_13" data-name="Ellipse 13" cx="7" cy="7" r="7" transform="translate(446 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_18" data-name="Ellipse 18" cx="7" cy="7" r="7" transform="translate(446 1013.975)" fill="#bbcbd8"/>
+                </g>
+              </svg>
+             </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-96"> 
+          <img src="./assets/imgs/folks.png" class="h-full w-full" alt="">
+        </div>
+      </div>
+
+      <!-- main -->
+      <main class="main__area">
+        <div class="container mx-auto relative">
+          <div class="mt-24 mb-12 text-center">
+           <h1 class="title__text">Generate your own QR Code!</h1>
+           <p class="para mt-12">Fight Covid-19, Build a clean and better community. Join Now!</p>
+           <p class="subtitle__text mt-12">Please choose which type of account 
+            you'd like to register</p>
+          </div>
+
+            <!-- contents -->
+            <section class="flex items-center md:space-x-16 flex-col md:flex-row justify-center mt-24 w-11/12 md:w-8/12 mx-auto">
+            <a href="" class="card__link">
+              <div class="card card__blue shadow-lg rounded-xl">
+                <img src="./assets/imgs/personal-account.png" alt="">
+                <p class="subtitle__text weight-500">Personal Account</p>
+              </div>
+            </a>
+            <a href="" class="card__link">
+              <div class="card card__yellow mt-8 md:mt-0 shadow-lg rounded-xl">
+                <img src="./assets/imgs/business-account.png" alt="">
+                <p class="subtitle__text weight-500">Business Account</p>
+              </div>
+            </a>
+            </section>
+
+              <section class="text-center py-36">
+                  <h1 class="title__text">What Go<span class="red">Scan</span> Can Do?</h1>
+
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 mt-24 ">
+                    <div class="card__red card__link rounded-xl shadow-md bg-gray-100">
+                      <img src="https://www.scanmo.co/images/use-cases/contact-tracing.png" alt="">
+                      <div class="w-full pt-12 pb-6">
+                        <p class="subtitle__text uppercase">
+                          Contact Tracing
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card__yellow card__link rounded-xl shadow-md bg-gray-100">
+                      <img src="https://www.scanmo.co/images/use-cases/visitor-tracking.png" alt="">
+                      <div class="w-full pt-12 pb-6">
+                        <p class="subtitle__text uppercase">
+                          Visitor Tracking
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card__blue card__link rounded-xl shadow-md bg-gray-100">
+                      <img src="https://www.scanmo.co/images/use-cases/peer-to-peer.png" alt="">
+                      <div class="w-full pt-12 pb-6">
+                        <p class="subtitle__text uppercase">
+                          Peer-to-Peer Scanning
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+   
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer__area">
+       <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:justify-between">
+          <p class="para">&copy; 2020 - 2021 GoScan. All rights reserved.</p>
+          <ul class="flex items-center space-x-6 mt-2 md:mt-0">
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Policy</a></li>
+          </ul>
+       </div>
+      </footer>
+    </div>
+
+    <!-- modile nav -->
+   <div class="mobile__nav--container" :class="{ 'active': open }" >
+    <div class="cross cursor-pointer absolute top-6 left-8"  @click="open = false">
+      <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  </div>
+    <div class="mobile__nav">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">FAQs</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+      <li>
+        <a href="#" class="btn__primary">Sign Up</a>
+      </li>
+ 
+    </ul>
+  </div>
+   </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

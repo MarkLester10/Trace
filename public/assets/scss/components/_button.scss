@@ -1,0 +1,13 @@
+.btn{
+  padding: 1.6rem 4rem;
+  border-radius: 9999px;
+  & :focus{
+    outline:none;
+    border: none;
+  }
+}
+.btn__primary{
+  @extend .btn;
+  background: $secondary-color;
+  color: $light-grey;
+}
