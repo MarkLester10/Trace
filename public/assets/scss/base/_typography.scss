@@ -21,6 +21,12 @@ a{
   }
 }
 
+label{
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: $black;
+}
+
 .title__text {
   font: normal 125% /4rem $poppins;
   letter-spacing: 0.2rem;

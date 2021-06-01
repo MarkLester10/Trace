@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trace</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  </head>
+  <body x-data="{ open: false, isProfileOpen:false}">
+    <div class="grid__container">
+
+      <!-- header -->
+      <div class="banner border-b-2 flex items-center">
+        <div
+          class="container mx-auto flex items-center justify-between"
+        >
+        <div>
+          <div class="block lg:hidden">
+           <a href="/">
+            <img
+            src="./assets/imgs/logo_black.png"
+            class="w-64"
+            alt="Kuyang Rey Beer Below Zero"
+          />
+          </a>
+          </div>
+        </div>
+      <div class="hidden lg:block">
+        <ul class="flex flex-wrap items-center justify-center md:justify-items-auto space-x-8">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">FAQs</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li class="relative">
+            <a href="javascript: void(0);" class="flex items-center space-x-2" @click="isProfileOpen = true">
+              <img src="./assets/imgs/img-placeholder.png" class="w-20 h-20 rounded-full object-cover ring ring-yellow-400 ring-offset-2" alt="">
+              <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+            </a>
+            <div class="bg-gray-50 shadow-md p-6 -bottom-56 -left-20 absolute z-50" x-show="isProfileOpen" @click.away="isProfileOpen = false">
+              <ul class="space-y-6">
+                <li>
+                  <a href="dashboard.html" class="hover:text-yellow-400">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-400">Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-400">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="block lg:hidden cursor-pointer"  @click="open = true">
+        <svg class="w-16 h-16 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+      </div>
+        </div>
+      </div>
+
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="container mx-auto relative h-full">
+            <div class="sidebar__logo">
+             <a href="/">
+              <img
+              src="./assets/imgs/logo.png"
+              class="w-11/12 object-cover"
+              alt="Kuyang Rey Beer Below Zero"
+            />
+            </a>
+            </div>
+            <p class="para mt-12 white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga odio aliquam laboriosam voluptatum quia, mollitia ipsa incidunt nisi, ex aliquid quisquam dolor expedita autem laudantium voluptates</p>
+            <div class="absolute bottom-0 right-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-40" viewBox="0 0 172 130">
+                <g id="Group_2" data-name="Group 2" transform="translate(-288 -897.975)">
+                  <circle id="Ellipse_1" data-name="Ellipse 1" cx="7" cy="7" r="7" transform="translate(288 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_10" data-name="Ellipse 10" cx="7" cy="7" r="7" transform="translate(288 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_15" data-name="Ellipse 15" cx="7" cy="7" r="7" transform="translate(288 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_20" data-name="Ellipse 20" cx="7" cy="7" r="7" transform="translate(288 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_2" data-name="Ellipse 2" cx="7" cy="7" r="7" transform="translate(327 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_9" data-name="Ellipse 9" cx="7" cy="7" r="7" transform="translate(327 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_14" data-name="Ellipse 14" cx="7" cy="7" r="7" transform="translate(327 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_19" data-name="Ellipse 19" cx="7" cy="7" r="7" transform="translate(327 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_3" data-name="Ellipse 3" cx="7" cy="7" r="7" transform="translate(367 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_8" data-name="Ellipse 8" cx="7" cy="7" r="7" transform="translate(367 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_11" data-name="Ellipse 11" cx="7" cy="7" r="7" transform="translate(367 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_16" data-name="Ellipse 16" cx="7" cy="7" r="7" transform="translate(367 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_4" data-name="Ellipse 4" cx="7" cy="7" r="7" transform="translate(406 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_6" data-name="Ellipse 6" cx="7" cy="7" r="7" transform="translate(406 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_12" data-name="Ellipse 12" cx="7" cy="7" r="7" transform="translate(406 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_17" data-name="Ellipse 17" cx="7" cy="7" r="7" transform="translate(406 1013.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_5" data-name="Ellipse 5" cx="7" cy="7" r="7" transform="translate(446 897.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_7" data-name="Ellipse 7" cx="7" cy="7" r="7" transform="translate(446 936.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_13" data-name="Ellipse 13" cx="7" cy="7" r="7" transform="translate(446 974.975)" fill="#bbcbd8"/>
+                  <circle id="Ellipse_18" data-name="Ellipse 18" cx="7" cy="7" r="7" transform="translate(446 1013.975)" fill="#bbcbd8"/>
+                </g>
+              </svg>
+             </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-96"> 
+          <img src="./assets/imgs/folks.png" class="h-full w-full" alt="">
+        </div>
+      </div>
+
+      <!-- main -->
+      <main class="main__area">
+        <div class="container mx-auto relative">
+            <div>
+              <h1 class="title__text my-12">Activity History</h1>
+              <div class="relative">
+                <svg class="absolute top-4 left-8 w-10 h-10 helper__color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" class="form-input input py-4 pl-24 focus:border-yellow-400 focus:ring-yellow-400" placeholder="Search your activities, place, establishment visited">
+              </div>
+            </div>
+<div class="overflow-x-auto client-table shadow-xl bg-white">
+          <div class="my-6 w-full rounded-lg">
+              <table class="min-w-max w-full table-auto">
+                  <thead>
+                      <tr class="bg-gray-100 leading-normal">
+                          <th class="py-8 px-6 text-left weight-500">Date</th>
+                          <th class="py-8 px-6 text-left weight-500">Time</th>
+                          <th class="py-8 px-6 text-center weight-500">Establishment / Peer</th>
+                          <th class="py-8 px-6 text-center weight-500">Peer / Establishment Address</th>
+                          <th class="py-8 px-6 text-center weight-500">Temp</th>
+                          <th class="py-8 px-6 text-center weight-500">Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody class="text-gray-700 font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-50" style="font-size: 14px;">
+                          <td class="py-8 px-6 text-left whitespace-nowrap">
+                              <span class="font-medium">July 7, 2021</span>
+                          </td>
+                          <td class="py-8 px-6 text-left">
+                              <span class="font-medium">7:15 AM</span>
+                          </td>
+                          <td class="py-8 px-6 text-left whitespace-nowrap">
+                            <div class="flex items-center space-x-6">
+                              <img class="w-16 h-16 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                <span class="font-medium">React Project</span>
+                            </div>
+                        </td>
+                          <td class="py-8 px-6 text-center">
+                              <span class="font-medium">949 Purok 3 Lorem ipsum, Msaaydasd, <br> Casdgasdk, Lagasd</span>
+                          </td>
+                          <td class="py-8 px-6 text-center">
+                              <span class="font-medium">38 °C</span>
+                          </td>
+                          <td class="py-8 px-6 text-center">
+                              <div class="flex item-center justify-center">
+                                  <div class="w-8 mr-4 transform hover:text-green-500 hover:scale-110 cursor-pointer">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-8 mr-4 transform hover:text-red-500 hover:scale-110 cursor-pointer">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                      </svg>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-50" style="font-size: 14px;">
+                          <td class="py-8 px-6 text-left whitespace-nowrap">
+                              <span class="font-medium">July 7, 2021</span>
+                          </td>
+                          <td class="py-8 px-6 text-left">
+                              <span class="font-medium">7:15 AM</span>
+                          </td>
+                          <td class="py-8 px-6 text-left whitespace-nowrap">
+                            <div class="flex items-center space-x-6">
+                              <img class="w-16 h-16 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                <span class="font-medium">React Project</span>
+                            </div>
+                        </td>
+                          <td class="py-8 px-6 text-center">
+                              <span class="font-medium">949 Purok 3 Lorem ipsum, Msaaydasd, <br> Casdgasdk, Lagasd</span>
+                          </td>
+                          <td class="py-8 px-6 text-center">
+                              <span class="font-medium">38 °C</span>
+                          </td>
+                          <td class="py-8 px-6 text-center">
+                              <div class="flex item-center justify-center">
+                                  <div class="w-8 mr-4 transform hover:text-green-500 hover:scale-110 cursor-pointer">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-8 mr-4 transform hover:text-red-500 hover:scale-110 cursor-pointer">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                      </svg>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-50" style="font-size: 14px;">
+                          <td class="py-8 px-6 text-left whitespace-nowrap">
+                              <span class="font-medium">July 7, 2021</span>
+                          </td>
+                          <td class="py-8 px-6 text-left">
+                              <span class="font-medium">7:15 AM</span>
+                          </td>
+                          <td class="py-8 px-6 text-left whitespace-nowrap">
+                            <div class="flex items-center space-x-6">
+                              <img class="w-16 h-16 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                <span class="font-medium">React Project</span>
+                            </div>
+                        </td>
+                          <td class="py-8 px-6 text-center">
+                              <span class="font-medium">949 Purok 3 Lorem ipsum, Msaaydasd, <br> Casdgasdk, Lagasd</span>
+                          </td>
+                          <td class="py-8 px-6 text-center">
+                              <span class="font-medium">38 °C</span>
+                          </td>
+                          <td class="py-8 px-6 text-center">
+                              <div class="flex item-center justify-center">
+                                  <div class="w-8 mr-4 transform hover:text-green-500 hover:scale-110 cursor-pointer">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-8 mr-4 transform hover:text-red-500 hover:scale-110 cursor-pointer">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                      </svg>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                    
+                  </tbody>
+              </table>
+          </div>
+</div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer__area">
+       <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:justify-between">
+          <p class="para">&copy; 2020 - 2021 GoScan. All rights reserved.</p>
+          <ul class="flex items-center space-x-6 mt-2 md:mt-0">
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Policy</a></li>
+          </ul>
+       </div>
+      </footer>
+    </div>
+
+    <!-- modile nav -->
+   <div class="mobile__nav--container" :class="{ 'active': open }" >
+    <div class="cross cursor-pointer absolute top-6 left-8"  @click="open = false">
+      <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  </div>
+    <div class="mobile__nav">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">FAQs</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li class="relative">
+        <a href="javascript: void(0);" class="flex items-center" @click="isProfileOpen = true">
+          <svg class="w-8 h-8 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          Mark Lester S. Morta
+          <svg class="w-8 h-8 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="flex flex-col space-y-6 absolute w-full left-12 -bottom-48  " x-show="isProfileOpen" @click.away="isProfileOpen = false">     
+          <a href="dashboard.html" class="hover:text-yellow-400">Dashboard</a>
+          <a href="#" class="hover:text-yellow-400">Profile</a>
+          <a href="#" class="hover:text-yellow-400">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+   </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

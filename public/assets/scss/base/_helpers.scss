@@ -17,12 +17,20 @@
   background-color:$mid-grey;
 }
 
+.app__line{
+  border: 1px solid $mid-grey;
+}
+
 .text__small{
   font-size: 12px !important;
 }
 
 .helper__color{
  color: $mid-grey !important;
+}
+
+.bg-mid-grey{
+  background-color: $mid-grey !important;
 }
 //container
 .container {

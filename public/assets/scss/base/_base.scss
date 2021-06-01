@@ -55,3 +55,14 @@ i {
   font-size: 3rem;
   display: block;
 }
+
+.client-table {
+  &::-webkit-scrollbar{
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $light-grey; 
+    border-radius: 10px;
+    
+  }
+}

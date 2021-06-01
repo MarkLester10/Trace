@@ -46,10 +46,10 @@
             <a href="#">Contact</a>
           </li>
           <li>
-            <a href="login.html" class="btn__primary rounded-full">Login</a>
+            <a href="login.html">Login</a>
           </li>
           <li>
-            <a href="#">Sign Up</a>
+            <a href="#" class="btn__primary rounded-full">Sign Up</a>
           </li>
         </ul>
       </div>
@@ -108,44 +108,157 @@
       <main class="main__area">
         <div class="container mx-auto relative">
             <!-- contents -->
-            <section class="mt-24">
-              <div class="bg-white w-full md:w-7/12 p-12 md:p-16 mx-auto shadow-lg rounded-2xl">
-                  <h1 class="title__text">Login</h1>
+            <div class="mt-24 mb-12 text-center">
+              <h1 class="title__text">Generate your own QR Code!</h1>
+              <p class="para mt-12">Fight Covid-19, Build a clean and better community. Join Now!</p>
+             </div>
+
+             <form action="">
+               <!-- Business Information -->
+               <section class="app__line p-6 md:p-36 w-full  md:w-11/12 bg-white mx-auto mt-24">
+                <div class="text-center py-4">
+                  <div class="title__text weight-500">Business Account</div>
+                </div>
+                <div class="app__border my-12"></div>
+                <h1 class="subtitle__text">1. Business Information</h1>
+                <small class="helper__color block mt-4">Please fill in all required fields</small>
+                <div class="app__border my-12"></div>
+                <div class="space-y-8">
+                  <div class="space-y-4">
+                    <label class="weight-500">Business Name <span class="red">*</span></label>
+                    <input type="text" class="form-input input" placeholder="Business Name">
+                  </div>
+                  <div class="responsive-input">
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Business ID</label>
+                    <input type="text" class="form-input input" placeholder="Busines name, id, etc">
+                    <small class="helper__color">A unique name of your business</small>
+                   </div>
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Business Website</label>
+                    <input type="number" class="form-input input" placeholder="">
+                    <small class="helper__color">Must have http:// or https://</small>
+                   </div>
+                  </div>
+                   <div class="space-y-4">
+                    <label class="weight-500">Country <span class="red">*</span></label>
+                    <select name="" readonly class="form-input input">
+                      <option value="Philippines" selected>Philippines</option>
+                    </select>
+                  </div>
+                  <div class="space-y-4">
+                    <label class="weight-500">Address <span class="red">*</span></label>
+                    <input type="text" class="form-input input" placeholder="House/Bldg. No., Street Name">
+                  </div>
+                  <div class="responsive-input">
+                    <div class="flex-1 space-y-4">
+                     <label class="weight-500">Province <span class="red">*</span></label>
+                     <select name="" class="form-input input">
+                       <option value="">Please select province</option>
+                       <option value="">option</option>
+                       <option value="">option</option>
+                       <option value="">option</option>
+                     </select>
+                    </div>
+                    <div class="flex-1 space-y-4">
+                     <label class="weight-500">City / Municipality <span class="red">*</span></label>
+                     <select name="" class="form-input input">
+                      <option value="">Please select city</option>
+                      <option value="">option</option>
+                      <option value="">option</option>
+                      <option value="">option</option>
+                      </select>
+                    </div>
+                    <div class="flex-1 space-y-4">
+                     <label class="weight-500">Barangay / District <span class="red">*</span></label>
+                     <select name="" class="form-input input">
+                      <option value="">Please select barangay</option>
+                      <option value="">option</option>
+                      <option value="">option</option>
+                      <option value="">option</option>
+                      </select>
+                    </div>
+                   </div>
+                </div>
+               </section>
+
+               <!-- Admin User Information -->
+               <section class="app__line p-6 md:p-36 w-full  md:w-11/12 bg-white mx-auto mt-24">
+                <h1 class="subtitle__text">2. Admin User Information</h1>
+                <small class="helper__color block mt-4">Please fill in all required fields</small>
+                <div class="app__border my-12"></div>
+                <div class="space-y-8">
+                  <div class="space-y-4">
+                    <label class="weight-500">First Name <span class="red">*</span></label>
+                    <input type="text" class="form-input input" placeholder="First Name">
+                  </div>
+                  <div class="space-y-4">
+                    <label class="weight-500">Last Name <span class="red">*</span></label>
+                    <input type="text" class="form-input input" placeholder="First Name">
+                  </div>
+                  <div class="responsive-input">
+                    <div class="flex-1 space-y-4">
+                     <label class="weight-500">Gender <span class="red">*</span></label>
+                     <select name="" class="form-input input">
+                       <option value="">Please select gender</option>
+                       <option value="Male">Male</option>
+                       <option value="Female">Female</option>
+                       <option value="Person choose to not display his gender">Rather not say</option>
+                     </select>
+                    </div>
+                    <div class="flex-1 space-y-4">
+                     <label class="weight-500">Contact Number <span class="red">*</span></label>
+                     <input type="text" class="form-input input" placeholder="+639">
+                    </div>
+                   </div>
+  
+                </div>
+               </section>
+
+                <!-- Admin Account Information -->
+                <section class="app__line p-6 md:p-36 w-full  md:w-11/12 bg-white mx-auto mt-24">
+                  <h1 class="subtitle__text">3. Admin Account Information</h1>
                   <small class="helper__color block mt-4">Please fill in all required fields</small>
                   <div class="app__border my-12"></div>
-                <form action="">
                   <div class="space-y-8">
                     <div class="space-y-4">
                       <label class="weight-500">Email Address <span class="red">*</span></label>
                       <input type="text" class="form-input input" placeholder="example@email.com">
                     </div>
-                    <div class="space-y-4 relative">
+                    <div class="space-y-4">
                       <label class="weight-500">Password <span class="red">*</span></label>
-                      <input type="password" class="form-input input" placeholder="************">
-                        <a href="#" class="text__small text-right absolute -bottom-10 right-0 hover:underline">Forgot Password?</a>
+                      <input type="password" class="form-input input" placeholder="Password">
+                      <small class="helper__color">Password must be 8 characters long.</small>
+                    </div>
+                    <div class="space-y-4">
+                      <label class="weight-500">Confirm Password <span class="red">*</span></label>
+                      <input type="password" class="form-input input" placeholder="Confirm Password">
+                      <small class="helper__color">Must be the same as the password you previously entered.</small>
                     </div>
                   </div>
-                  <div class="mt-24 flex items-center justify-between md:flex-row flex-col">
-                    <p class="para">Don't have an account? <a href="#" class="yellow hover:underline">Sign Up</a></p>
-                    <button type="submit" class="btn__primary w-full mt-4 md:mt-0 md:w-auto">Login</button>
-                  </div>
-                  <div class="app__border my-16"></div>
-                  <div class="flex items-center justify-center">
-                    <a href="#" class="helper__color flex items-center hover:underline">
-                      Login business account
-                      <svg class="w-8 h-8 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                    </a>
-                  </div>
-                </form>
-              </div>
-            </section>
+                </section>
 
-            <section class="text-center py-36">
+               <!-- Form Action -->
+               <section class="p-6 md:p-36 w-full md:w-11/12 mx-auto mt-24">
+                <div class="flex items-center justify-center text-center">
+                  <div class="flex space-x-6">
+                    <input type="checkbox" class="form-input p-4 cursor-pointer" required>
+                    <p class="para">I agree to GoScan <a href="#" class="yellow hover:underline">Terms and Conditions</a> and <a href="#" class="yellow hover:underline">Privacy Policy</a>.</p>
+                  </div>
+                </div>
+                <div class="mt-16 text-center">
+                  <button class="btn__primary" type="submit">Create QR Code</button>
+                </div>
+                  <p class="mt-16 italic text-center weight-500">Your Go<span class="red">Scan</span> QR Code will automatically generated and assigned to your account once registration is complete</p>
+               </section>
+             </form>
+
+             <section class="text-center py-36">
               <h1 class="title__text">What Go<span class="red">Scan</span> Can Do?</h1>
 
               <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 mt-24 ">
                 <div class="card__red card__link rounded-xl shadow-md bg-gray-100">
-                  <img src="https://www.scanmo.co/images/use-cases/contact-tracing.png" alt="">
+                  <img src="https://www.scanmo.co/images/use-cases/contact-tracing.png"  alt="">
                   <div class="w-full pt-12 pb-6">
                     <p class="subtitle__text uppercase">
                       Contact Tracing
@@ -153,7 +266,7 @@
                   </div>
                 </div>
                 <div class="card__yellow card__link rounded-xl shadow-md bg-gray-100">
-                  <img src="https://www.scanmo.co/images/use-cases/visitor-tracking.png" alt="">
+                  <img src="https://www.scanmo.co/images/use-cases/visitor-tracking.png"  alt="">
                   <div class="w-full pt-12 pb-6">
                     <p class="subtitle__text uppercase">
                       Visitor Tracking
@@ -161,7 +274,7 @@
                   </div>
                 </div>
                 <div class="card__blue card__link rounded-xl shadow-md bg-gray-100">
-                  <img src="https://www.scanmo.co/images/use-cases/peer-to-peer.png" alt="">
+                  <img src="https://www.scanmo.co/images/use-cases/peer-to-peer.png"  alt="">
                   <div class="w-full pt-12 pb-6">
                     <p class="subtitle__text uppercase">
                       Peer-to-Peer Scanning
@@ -170,7 +283,6 @@
                 </div>
               </div>
           </section>
-
         </div>
       </main>
 
@@ -206,10 +318,10 @@
         <a href="#">Contact</a>
       </li>
       <li>
-        <a href="login.html" class="btn__primary">Login</a>
+        <a href="login.html" >Login</a>
       </li>
       <li>
-        <a href="#" >Sign Up</a>
+        <a href="#" class="btn__primary">Sign Up</a>
       </li>
  
     </ul>
