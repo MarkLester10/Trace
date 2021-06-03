@@ -5,7 +5,8 @@
 .banner {
   grid-area: banner;
     background-color: $light-grey;
-  padding: 3rem auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   @media screen and (max-width: 768px) {
     padding-top: 2rem;
     padding-bottom: 2rem;
