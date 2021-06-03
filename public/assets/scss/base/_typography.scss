@@ -11,6 +11,7 @@ body {
   grid-template-rows: auto 1fr auto;
   width: 100%;
   background: url('../imgs/bg-image.png') no-repeat center center/cover;
+  background-attachment: fixed;
 }
 
 a{
