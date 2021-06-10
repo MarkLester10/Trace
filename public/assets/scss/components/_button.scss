@@ -1,6 +1,7 @@
 .btn{
   padding: 1.6rem 4rem;
   border-radius: 9999px;
+  text-align: center;
   &:focus{
     outline:none;
     border: none;
@@ -13,5 +14,23 @@
 .btn__primary{
   @extend .btn;
   background: $secondary-color;
+  color: $light-grey;
+}
+
+.btn__success{
+  @extend .btn;
+  background: $green;
+  color: $light-grey;
+}
+
+.btn__danger{
+  @extend .btn;
+  background: $red;
+  color: $light-grey;
+}
+
+.btn__gray{
+  @extend .btn;
+  background: $mid-grey;
   color: $light-grey;
 }
