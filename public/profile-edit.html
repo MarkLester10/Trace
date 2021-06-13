@@ -140,171 +140,173 @@
                     </div>
                   </div>
                   <a href="#">
-                    <img src="./assets/imgs/qrcode.svg" class="w-80" alt="">
+                    <img src="./assets/imgs/qrcode.svg" class="w-80 popup-tooltip" alt="">
                   </a>
               </div>
               <img src="./assets/imgs/woman.svg" class="absolute w-32 md:w-52 bottom-0 left-0" alt="">
             </div>
-            <form action="" enctype="multipart/form-data">
-            <div class="app__line p-8 md:p-12 w-full md:w-9/12 bg-white mx-auto shadow-lg">
-              <h1 class="title__text weight-500">Personal Information</h1>
-              <small class="red">Fields with an asterisk (*) are REQUIRED.</small>
-              <div class="app__border my-12"></div>
 
-              <!-- Profile Image -->
-              <div class="my-16 flex flex-col md:flex-row items-center justify-center gap-12">
-                <img src="./assets/imgs/img-placeholder.png" id="imageDisplay" class="w-56 h-56 rounded-full object-cover ring ring-yellow-400 ring-offset-2" alt="Profile">
-                <div class="flex flex-col gap-6">
-                  <h1 class="title__text">Profile Picture</h1>
-                  <label for="profile-image" class="btn__gray cursor-pointer relative weight-500">Upload Photo
-                    <input type="file" class="opacity-0 absolute z-0" id="profile-image" onchange="displayImage(this)">
-                  </label>
-                </div>
-              </div>
-
-              <div class="space-y-8">
-                <div class="space-y-4">
-                  <label class="weight-500">First Name <span class="red">*</span></label>
-                  <input type="text" class="form-input input" placeholder="First Name">
-                </div>
-                <div class="space-y-4">
-                  <label class="weight-500">Last Name <span class="red">*</span></label>
-                  <input type="password" class="form-input input" placeholder="Last Name">
-                </div>
-                <div class="responsive-input">
-                 <div class="flex-1 space-y-4">
-                  <label class="weight-500">Gender <span class="red">*</span></label>
-                  <select name="" class="form-input input">
-                    <option value="">Please select gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Person choose to not display his gender">Rather not say</option>
-                  </select>
-                 </div>
-                 <div class="flex-1 space-y-4">
-                  <label class="weight-500">Age <span class="red">*</span></label>
-                  <input type="number" class="form-input input" placeholder="Age">
-                 </div>
-                </div>
-                <div class="responsive-input">
-                  <div class="flex-1 space-y-4">
-                   <label class="weight-500">Current Temperature - °C (optional)</label>
-                   <input type="number" class="form-input input" placeholder="Current temperature in Celsius">
-                  </div>
-                  <div class="flex-1 space-y-4">
-                   <label class="weight-500">Contact Number <span class="red">*</span></label>
-                   <input type="text" class="form-input input" value="+639">
-                  </div>
+            
+            <form action="">
+              <!-- Personal Information -->
+              <section class="app__line p-6 md:p-36 w-full md:w-9/12 bg-white mx-auto mt-24">
+               <h1 class="subtitle__text">1. Personal Information</h1>
+               <small class="helper__color block mt-4">Please fill in all required fields</small>
+               <div class="app__border my-12"></div>
+               <div class="space-y-8">
+                 <div class="space-y-4">
+                   <label class="weight-500">First Name <span class="red">*</span></label>
+                   <input type="text" class="form-input input" placeholder="First Name">
                  </div>
                  <div class="space-y-4">
-                  <label class="weight-500">Country <span class="red">*</span></label>
-                  <select name="" readonly class="form-input input">
-                    <option value="Philippines" selected>Philippines</option>
-                  </select>
-                </div>
-                <div class="space-y-4">
-                  <label class="weight-500">Address <span class="red">*</span></label>
-                  <input type="text" class="form-input input" placeholder="House/Bldg. No., Street Name">
-                </div>
-                <div class="responsive-input">
+                   <label class="weight-500">Last Name <span class="red">*</span></label>
+                   <input type="password" class="form-input input" placeholder="Last Name">
+                 </div>
+                 <div class="responsive-input">
                   <div class="flex-1 space-y-4">
-                   <label class="weight-500">Province <span class="red">*</span></label>
+                   <label class="weight-500">Gender <span class="red">*</span></label>
                    <select name="" class="form-input input">
-                     <option value="">Please select province</option>
-                     <option value="">option</option>
-                     <option value="">option</option>
-                     <option value="">option</option>
+                     <option value="">Please select gender</option>
+                     <option value="Male">Male</option>
+                     <option value="Female">Female</option>
+                     <option value="Person choose to not display his gender">Rather not say</option>
                    </select>
                   </div>
                   <div class="flex-1 space-y-4">
-                   <label class="weight-500">City / Municipality <span class="red">*</span></label>
-                   <select name="" class="form-input input">
-                    <option value="">Please select city</option>
-                    <option value="">option</option>
-                    <option value="">option</option>
-                    <option value="">option</option>
-                    </select>
-                  </div>
-                  <div class="flex-1 space-y-4">
-                   <label class="weight-500">Barangay / District <span class="red">*</span></label>
-                   <select name="" class="form-input input">
-                    <option value="">Please select barangay</option>
-                    <option value="">option</option>
-                    <option value="">option</option>
-                    <option value="">option</option>
-                    </select>
+                   <label class="weight-500">Age <span class="red">*</span></label>
+                   <input type="number" class="form-input input" placeholder="Age">
                   </div>
                  </div>
-              </div>
+                 <div class="responsive-input">
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Current Temperature - °C (optional)</label>
+                    <input type="number" class="form-input input" placeholder="Current temperature in Celsius">
+                   </div>
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Contact Number <span class="red">*</span></label>
+                    <input type="text" class="form-input input" value="+639">
+                   </div>
+                  </div>
+                  <div class="space-y-4">
+                   <label class="weight-500">Country <span class="red">*</span></label>
+                   <select name="" readonly class="form-input input">
+                     <option value="Philippines" selected>Philippines</option>
+                   </select>
+                 </div>
+                 <div class="space-y-4">
+                   <label class="weight-500">Address <span class="red">*</span></label>
+                   <input type="text" class="form-input input" placeholder="House/Bldg. No., Street Name">
+                 </div>
+                 <div class="responsive-input">
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Province <span class="red">*</span></label>
+                    <select name="" class="form-input input">
+                      <option value="">Please select province</option>
+                      <option value="">option</option>
+                      <option value="">option</option>
+                      <option value="">option</option>
+                    </select>
+                   </div>
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">City / Municipality <span class="red">*</span></label>
+                    <select name="" class="form-input input">
+                     <option value="">Please select city</option>
+                     <option value="">option</option>
+                     <option value="">option</option>
+                     <option value="">option</option>
+                     </select>
+                   </div>
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Barangay / District <span class="red">*</span></label>
+                    <select name="" class="form-input input">
+                     <option value="">Please select barangay</option>
+                     <option value="">option</option>
+                     <option value="">option</option>
+                     <option value="">option</option>
+                     </select>
+                   </div>
+                  </div>
+               </div>
+              </section>
 
               <!-- Account Information -->
-             <div class="mt-32">
-              <h1 class="title__text weight-500">Account Information</h1>
-              <small class="red">Fields with an asterisk (*) are REQUIRED.</small>
-              <div class="app__border my-12"></div>
-              <div class="space-y-8">
-                <div class="space-y-4">
-                  <label class="weight-500">Email Address <span class="red">*</span></label>
-                  <input type="text" class="form-input input" placeholder="example@email.com">
-                </div>
-                <div class="space-y-4">
-                  <label class="weight-500">Password</label>
-                  <input type="password" class="form-input input" placeholder="Password">
-                  <small class="helper__color">Please leave both fields blank, if you don't wish to update your password</small>
-                </div>
-                <div class="space-y-4">
-                  <label class="weight-500">Confirm Password</label>
-                  <input type="password" class="form-input input" placeholder="Confirm Password">
-                </div>
-              </div>
-             </div>
-
-             <!-- Vaccine Information -->
-             <div class="mt-32">
-              <h1 class="title__text weight-500">Vaccine Information</h1>
-              <small class="helper__color">This portion is optional</small>
-              <div class="app__border my-12"></div>
-              <div class="space-y-8">
-                <div class="responsive-input">
-                  <div class="flex-1 space-y-4">
-                   <label class="weight-500">Product Name or Manufacturer</label>
-                   <input type="number" class="form-input input" placeholder="Current temperature in Celsius">
-                  </div>
-                  <div class="flex-1 space-y-4">
-                   <label class="weight-500">No. of Dose Acquired</label>
-                   <input type="number" class="form-input input" min="1">
-                  </div>
+              <section class="app__line p-6 md:p-36 w-full md:w-9/12 bg-white mx-auto mt-24">
+               <h1 class="subtitle__text">2. Account Information</h1>
+               <small class="helper__color block mt-4">Please fill in all required fields</small>
+               <div class="app__border my-12"></div>
+               <div class="space-y-8">
+                 <div class="space-y-4">
+                   <label class="weight-500">Email Address <span class="red">*</span></label>
+                   <input type="text" class="form-input input" placeholder="example@email.com">
                  </div>
-                 <h1 class="subtitle__text uppercase">Dose of Covid-19 Vaccine Information</h1>
+                 <div class="space-y-4">
+                   <label class="weight-500">Password <span class="red">*</span></label>
+                   <input type="password" class="form-input input" placeholder="Password">
+                   <small class="helper__color">Password must be 8 characters long.</small>
+                 </div>
+                 <div class="space-y-4">
+                   <label class="weight-500">Confirm Password <span class="red">*</span></label>
+                   <input type="password" class="form-input input" placeholder="Confirm Password">
+                   <small class="helper__color">Must be the same as the password you previously entered.</small>
+                 </div>
+               </div>
+              </section>
+
+              <!-- Vaccine Information -->
+              <section class="app__line p-6 md:p-36 w-full md:w-9/12 bg-white mx-auto mt-24">
+               <h1 class="subtitle__text">3. Vaccine Information</h1>
+               <small class="helper__color block mt-4">This portion is optional</small>
+               <div class="app__border my-12"></div>
+               <div class="space-y-8">
                  <div class="responsive-input">
-                  <div class="flex-1 space-y-4">
-                   <label class="weight-500">Clinic Site or Health Care Professional</label>
-                   <input type="text" class="form-input input" placeholder="Current temperature in Celsius">
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Product Name or Manufacturer</label>
+                    <input type="number" class="form-input input" placeholder="Current temperature in Celsius">
+                   </div>
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">No. of Dose Acquired</label>
+                    <input type="number" class="form-input input" min="1">
+                   </div>
                   </div>
-                  <div class="flex-1 space-y-4">
-                   <label class="weight-500">Date Vaccinated</label>
-                   <input type="date" class="form-input input" min="1">
+                  <h1 class="subtitle__text uppercase">Dose of Covid-19 Vaccine Information</h1>
+                  <div class="responsive-input">
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Clinic Site or Health Care Professional</label>
+                    <input type="text" class="form-input input" placeholder="Current temperature in Celsius">
+                   </div>
+                   <div class="flex-1 space-y-4">
+                    <label class="weight-500">Date Vaccinated</label>
+                    <input type="date" class="form-input input" min="1">
+                   </div>
                   </div>
+                 <div class="space-y-4 relative">
+                   <label class="weight-500">Proof of Vaccination</label>
+                   <input type="file" id="file" class="form-input input border px-4">
+                   <button type="button" class="focus:outline-none focus:border-0 absolute top-12 right-6" 
+                   onclick="document.getElementById('file').value = ''">
+                   <svg class="w-10 h-10 text-red-500 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                 </button>
                  </div>
-                <div class="space-y-4 relative">
-                  <label class="weight-500">Proof of Vaccination</label>
-                  <input type="file" id="file" class="form-input input border px-4">
-                  <button type="button" class="focus:outline-none focus:border-0 absolute top-12 right-6" 
-                  onclick="document.getElementById('file').value = ''">
-                  <svg class="w-10 h-10 text-red-500 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                </button>
-                </div>
-               
-              </div>
-             </div>
+                
+               </div>
+              </section>
 
-             <div class="mt-12 flex flex-col md:flex-row gap-6 justify-end">
-               <a href="profile.html" class="btn__danger w-full md:w-auto">Cancel<a/>
-                <button class="btn__success w-full md:w-auto">Save Changes</button>
-             </div>
+              <!-- Form Action -->
+              <section class="p-6 md:p-36 w-full md:w-11/12 mx-auto mt-24">
+               <div class="flex items-center justify-center text-center">
+                 <div class="flex space-x-6">
+                   <input type="checkbox" class="form-input p-4 cursor-pointer" required>
+                   <p class="para">I agree to Trace <a href="#" class="yellow hover:underline">Terms and Conditions</a> and <a href="#" class="yellow hover:underline">Privacy Policy</a>.</p>
+                 </div>
+               </div>
+               <div class="mt-16 text-center">
+                 <button class="btn__primary w-full md:w-auto" type="submit">Create QR Code</button>
+               </div>
+                 <p class="mt-16 italic text-center weight-500">Your Go<span class="red">Scan</span> QR Code will automatically generated and assigned to your account once registration is complete</p>
+              </section>
+            </form>
 
-            </div>
-          </form>
+
         </div>
       </main>
 
@@ -354,6 +356,32 @@
     </ul>
   </div>
    </div>
+
+   <!-- modal -->
+   <div class="modal">
+    <div class="w-11/12 md:w-5/12 shadow-2xl">
+      <div class="bg-yellow-400 p-12">
+         <div class="bg-gray-700 w-full md:w-10/12 mx-auto p-12">
+          <img src="./assets/imgs/logo.png" class="w-72 mx-auto" alt="">
+          <img src="./assets/imgs/qrcode.svg" class="mx-auto mt-12" alt="">
+         </div>
+      </div>
+      <div class="bg-gray-50 p-8 flex flex-col md:flex-row justify-center gap-8">
+        <button type="button" class="btn__success flex gap-4 items-center justify-center">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          Download
+        </button>
+        <button type="button" class="btn__danger close-tooltip">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
