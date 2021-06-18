@@ -127,128 +127,49 @@
                 <input type="text" class="form-input input py-4 pl-24 focus:border-yellow-400 focus:ring-yellow-400" placeholder="Search your activities, place ...">
               </div>
             </div>
-<div class="overflow-x-auto client-table shadow-xl bg-white mt-12">
-          <div class="my-6 w-full rounded-lg">
-              <table class="min-w-max w-full table-auto">
-                  <thead>
-                      <tr class="bg-gray-100 leading-normal">
-                          <th class="py-8 px-6 text-left weight-500">Date</th>
-                          <th class="py-8 px-6 text-left weight-500">Time</th>
-                          <th class="py-8 px-6 text-center weight-500">Establishment / Peer</th>
-                          <th class="py-8 px-6 text-center weight-500">Peer / Establishment Address</th>
-                          <th class="py-8 px-6 text-center weight-500">Temp</th>
-                          <th class="py-8 px-6 text-center weight-500">Actions</th>
-                      </tr>
-                  </thead>
+<div class="overflow-x-auto client-table shadow-x mt-12">
+          <div class="my-6 w-full">
+              <table class="w-full">
                   <tbody class="text-gray-700 font-light">
-                      <tr class="border-b border-gray-200 hover:bg-gray-50" style="font-size: 14px;">
-                          <td class="py-8 px-6 text-left whitespace-nowrap">
-                              <span class="font-medium">July 7, 2021</span>
-                          </td>
-                          <td class="py-8 px-6 text-left">
-                              <span class="font-medium">7:15 AM</span>
-                          </td>
-                          <td class="py-8 px-6 text-left whitespace-nowrap">
-                            <div class="flex items-center space-x-6">
-                              <img class="w-16 h-16 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
-                                <span class="font-medium">React Project</span>
-                            </div>
-                        </td>
-                          <td class="py-8 px-6 text-center">
-                              <span class="font-medium">949 Purok 3 Lorem ipsum, Msaaydasd, <br> Casdgasdk, Lagasd</span>
-                          </td>
-                          <td class="py-8 px-6 text-center">
-                              <span class="font-medium">38 °C</span>
-                          </td>
-                          <td class="py-8 px-6 text-center">
-                              <div class="flex item-center justify-center">
-                                  <div class="w-8 mr-4 transform hover:text-green-500 hover:scale-110 cursor-pointer">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                      </svg>
-                                  </div>
-                                  <div class="w-8 mr-4 transform hover:text-red-500 hover:scale-110 cursor-pointer">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                      </svg>
-                                  </div>
+                      <tr class="inline-block w-full border-b border-gray-200 rounded-3xl bg-gray-100 hover:bg-gray-100">
+                          <td colspan="6" class="p-8 text-left w-full flex items-center flex-col md:flex-row justify-between md:space-x-6">
+                             <div class="flex items-center space-x-4">
+                              <p class="font-medium italic">You met</span>
+                              <div class="flex items-center space-x-6 italic">
+                                <img class="w-10 h-10 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                <p class="font-medium yellow">John Doe</span>
                               </div>
+                             </div>
+
+                             <small class="italic text-gray-500 font-medium text-center mt-4 md:mt-0">
+                               January 23 2021 at 3:15 PM <br>
+                               <a class="text-blue-400 underline block mt-2" href="#" style="font-size: 14px;">View Details</a>
+                             </small>
                           </td>
                       </tr>
-                      <tr class="border-b border-gray-200 hover:bg-gray-50" style="font-size: 14px;">
-                          <td class="py-8 px-6 text-left whitespace-nowrap">
-                              <span class="font-medium">July 7, 2021</span>
-                          </td>
-                          <td class="py-8 px-6 text-left">
-                              <span class="font-medium">7:15 AM</span>
-                          </td>
-                          <td class="py-8 px-6 text-left whitespace-nowrap">
-                            <div class="flex items-center space-x-6">
-                              <img class="w-16 h-16 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
-                                <span class="font-medium">React Project</span>
+                      
+                      <tr class="inline-block mt-6 w-full border-b border-gray-200 rounded-3xl bg-gray-100 hover:bg-gray-100">
+                        <td colspan="6" class="p-8 text-left w-full flex items-center flex-col md:flex-row justify-between md:space-x-6">
+                           <div class="flex items-center space-x-4">
+                            <p class="font-medium italic">You went to</p>
+                            <div class="flex items-center space-x-6 italic">
+                              <img class="w-10 h-10 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                              <p class="font-medium yellow">SM CITY CALAMBA</p>
+                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             </div>
+                           </div>
+
+                           <small class="italic text-gray-500 font-medium text-center mt-4 md:mt-0">
+                             January 23 2021 at 3:15 PM <br>
+                             <a class="text-blue-400 underline block mt-2" href="#" style="font-size: 14px;">View Details</a>
+                           </small>
                         </td>
-                          <td class="py-8 px-6 text-center">
-                              <span class="font-medium">949 Purok 3 Lorem ipsum, Msaaydasd, <br> Casdgasdk, Lagasd</span>
-                          </td>
-                          <td class="py-8 px-6 text-center">
-                              <span class="font-medium">38 °C</span>
-                          </td>
-                          <td class="py-8 px-6 text-center">
-                              <div class="flex item-center justify-center">
-                                  <div class="w-8 mr-4 transform hover:text-green-500 hover:scale-110 cursor-pointer">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                      </svg>
-                                  </div>
-                                  <div class="w-8 mr-4 transform hover:text-red-500 hover:scale-110 cursor-pointer">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                      </svg>
-                                  </div>
-                              </div>
-                          </td>
                       </tr>
-                      <tr class="border-b border-gray-200 hover:bg-gray-50" style="font-size: 14px;">
-                          <td class="py-8 px-6 text-left whitespace-nowrap">
-                              <span class="font-medium">July 7, 2021</span>
-                          </td>
-                          <td class="py-8 px-6 text-left">
-                              <span class="font-medium">7:15 AM</span>
-                          </td>
-                          <td class="py-8 px-6 text-left whitespace-nowrap">
-                            <div class="flex items-center space-x-6">
-                              <img class="w-16 h-16 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
-                                <span class="font-medium">React Project</span>
-                            </div>
-                        </td>
-                          <td class="py-8 px-6 text-center">
-                              <span class="font-medium">949 Purok 3 Lorem ipsum, Msaaydasd, <br> Casdgasdk, Lagasd</span>
-                          </td>
-                          <td class="py-8 px-6 text-center">
-                              <span class="font-medium">38 °C</span>
-                          </td>
-                          <td class="py-8 px-6 text-center">
-                              <div class="flex item-center justify-center">
-                                  <div class="w-8 mr-4 transform hover:text-green-500 hover:scale-110 cursor-pointer">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                      </svg>
-                                  </div>
-                                  <div class="w-8 mr-4 transform hover:text-red-500 hover:scale-110 cursor-pointer">
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                      </svg>
-                                  </div>
-                              </div>
-                          </td>
-                      </tr>
+                      
+              
                     
                   </tbody>
-              </table>
+                </table>
           </div>
 </div>
         </div>
