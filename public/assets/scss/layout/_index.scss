@@ -34,6 +34,27 @@
 
 // mobile nav
 
+.mobile-navigation{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  & ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    li{
+        background-color: $green;
+        padding:.8rem;
+        border-radius: 15px;
+    }
+ 
+  }
+}
+
 .mobile__nav--container{
   position:fixed;
   right: 0;
