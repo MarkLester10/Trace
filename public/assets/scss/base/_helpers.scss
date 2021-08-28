@@ -67,3 +67,11 @@
     visibility: visible;
   }
 }
+
+.bg_safe{
+  background-image: linear-gradient(to right top, #051937, #003e65, #006783, #009188, #00b876);
+}
+
+.bg_danger{
+  background-image: linear-gradient(to right top, #ea4c46, #ee5f5d, #f17273, #f28387, #f1959b);
+}
