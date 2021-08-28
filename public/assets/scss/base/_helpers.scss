@@ -75,3 +75,23 @@
 .bg_danger{
   background-image: linear-gradient(to right top, #ea4c46, #ee5f5d, #f17273, #f28387, #f1959b);
 }
+
+.bg__layout{
+  background-repeat: no-repeat;
+  background-position:center center;
+ background-size: cover;
+}
+
+.bg_community-safe{
+  background-image: url("../../assets/imgs/icons/bg-icons/blue-bg.svg");
+  @extend .bg__layout;
+}
+.bg_community-warning{
+  background-image: url("../../assets/imgs/icons/bg-icons/yellow-bg.svg");
+  @extend .bg__layout;
+}
+
+.bg_community-danger{
+  background-image: url("../../assets/imgs/icons/bg-icons/red-bg.svg");
+  @extend .bg__layout;
+}

@@ -23,6 +23,13 @@
   color: $light-grey;
 }
 
+.btn__info{
+  @extend .btn;
+  background: $blue;
+  color: $light-grey;
+}
+
+
 .btn__danger{
   @extend .btn;
   background: $red;
@@ -37,4 +44,8 @@
 
 .btn--sm{
   padding: 1.3rem 2rem !important;
+}
+
+.btn--xs{
+  padding: 1rem 1.9rem !important;
 }
