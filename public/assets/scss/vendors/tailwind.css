@@ -16,7 +16,7 @@
   }
 
   .notification-banner{
-    @apply bg-yellow-400 text-center p-6 flex items-center space-x-4;
+    @apply bg-yellow-400 p-6 flex items-center space-x-4;
   }
 
   .exposure-count{
