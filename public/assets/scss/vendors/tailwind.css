@@ -14,4 +14,16 @@
   .profile__card{
     @apply bg-white p-12 text-center md:text-left rounded-3xl flex flex-col md:flex-row items-center justify-center md:items-start md:justify-between;
   }
+
+  .notification-banner{
+    @apply bg-yellow-400 text-center p-6 flex items-center space-x-4;
+  }
+
+  .exposure-count{
+    @apply text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl;
+  }
+
+  .dashboard-card{
+    @apply p-12 bg-gray-100 rounded-2xl shadow-lg;
+  }
 }

@@ -55,6 +55,10 @@ label{
   color: $black;
   letter-spacing: .5px;
 
+  &.white{
+    color: #fff !important;
+  }
+
   @media screen and (max-width: 640px) {
     font-size: 1.4rem;
   }

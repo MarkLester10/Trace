@@ -16,17 +16,16 @@
     <div class="grid__container">
 
       <!-- header -->
-
       <div class="banner flex items-center">
         <div
-          class="container mx-auto flex items-center justify-center md:justify-between"
+          class="container mx-auto flex items-center justify-between"
         >
         <div>
           <div class="block lg:hidden">
            <a href="/">
             <img
             src="./assets/imgs/logo.png"
-            class="w-60"
+            class="w-64"
             alt="Trace"
           />
           </a>
@@ -67,9 +66,9 @@
           </li>
         </ul>
       </div>
-      <!-- <div class="block lg:hidden cursor-pointer"  @click="open = true">
+      <div class="block lg:hidden cursor-pointer"  @click="open = true">
         <svg class="w-16 h-16 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
-      </div> -->
+      </div>
         </div>
       </div>
 
@@ -120,169 +119,58 @@
 
       <!-- main -->
       <main class="main__area">
-        <div class="notification-banner">
-          <svg class="w-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-          <p class="para white">Your health declaration will expire in 2 days. Please update your information.</p>
-        </div>
-   
-        <div class="container mx-auto relative space-y-10">
-          
-           <div class="flex justify-end mt-10">
-              <a href="#" class="btn__success btn--sm shadow-lg">View History</a>
-           </div>
-
-
-           <!-- Possible Exposures -->
-           <div class="dashboard-card flex items-center justify-between">
-              <div>
-                <h4 class="weight-bold">Potential Exposure</h4>
-                <small class="helper__color block mt-4">As of Aug 6 - Aug 20</small>
-              </div>
+        <div class="container mx-auto relative">
+            <div>
+              <h1 class="title__text my-12">Activity History</h1>
               <div class="relative">
-                <img src="./assets/imgs/icons/shield.svg" alt="">
-                <h1 class="exposure-count">9</h1>
+                <svg class="absolute top-4 left-8 w-10 h-10 helper__color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" class="form-input input py-4 pl-24 focus:border-yellow-400 focus:ring-yellow-400" placeholder="Search your activities, place ...">
               </div>
-           </div>
+            </div>
+<div class="overflow-x-auto client-table shadow-x mt-12">
+          <div class="my-6 w-full">
+              <table class="w-full">
+                  <tbody class="text-gray-700 font-light">
+                      <tr class="inline-block w-full border-b border-gray-200 rounded-3xl bg-gray-100 hover:bg-gray-100">
+                          <td colspan="6" class="p-8 text-left w-full flex items-center flex-col md:flex-row justify-between md:space-x-6">
+                             <div class="flex items-center space-x-4">
+                              <p class="font-medium italic">You met</span>
+                              <div class="flex items-center space-x-6 italic">
+                                <img class="w-10 h-10 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                <p class="font-medium yellow">John Doe</span>
+                              </div>
+                             </div>
 
+                             <small class="italic text-gray-500 font-medium text-center mt-4 md:mt-0">
+                               January 23 2021 at 3:15 PM <br>
+                               <a class="text-blue-400 underline block mt-2" href="#" style="font-size: 14px;">View Details</a>
+                             </small>
+                          </td>
+                      </tr>
+                      
+                      <tr class="inline-block mt-6 w-full border-b border-gray-200 rounded-3xl bg-gray-100 hover:bg-gray-100">
+                        <td colspan="6" class="p-8 text-left w-full flex items-center flex-col md:flex-row justify-between md:space-x-6">
+                           <div class="flex items-center justify-between space-x-4">
+                            <p class="font-medium italic">You went to</p>
+                            <div class="flex items-center space-x-6 italic">
+                              <img class="w-10 h-10 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                              <p class="font-medium yellow">SM CITY CALAMBA</p>
+                            </div>
+                           </div>
 
-            <!-- Location Update -->
-          <div class="dashboard-card text-center bg-blue-400">
-            <p class="para white">
-              Batangas is under General Community Quarantine (GCQ)
-            </p>
-            <small class="helper__color block">As of Aug 6 - Aug 20</small>
+                           <small class="italic text-gray-500 font-medium text-center mt-4 md:mt-0">
+                             January 23 2021 at 3:15 PM <br>
+                             <a class="text-blue-400 underline block mt-2" href="#" style="font-size: 14px;">View Details</a>
+                           </small>
+                        </td>
+                      </tr>
+                      
+              
+                    
+                  </tbody>
+                </table>
           </div>
-
-           <!-- Covid Daily Updates -->
-           <div class="dashboard-card px-8 py-16 space-y-4">
-            <div class="text-center">
-              <h4 class="weight-bold">COVID-19 Updates</h4>
-              <small class="helper__color block mt-4">As of Aug 20, Today</small>
-              <h4 class="weight-bold mt-12">Philippines</h4>
-            </div>
-
-            <div class="dashboard-card bg-white overflow-hidden relative space-y-8">
-                <div class="text-red-400">
-                  <small>Confirmed Cases</small>
-                  <h4 class="weight-bold">1,807,800</h4>
-                </div>
-                <hr>
-                <div class="text-green-400">
-                  <small>Recovered</small>
-                  <h4 class="weight-bold">1,807,800</h4>
-                </div>
-                <hr>
-                <div>
-                  <small>Deaths</small>
-                  <h4 class="weight-bold">32,000</h4>
-                </div>
-               
-                <div class="absolute -right-8 -bottom-8">
-                    <img src="./assets/imgs/icons/virus.svg" alt="">
-                </div>
-            </div>
-            
-
-           </div>
-
-
-          <!-- Prevention -->
-          <div class="dashboard-card">
-            <div class="text-center pb-8">
-              <h4 class="weight-bold">Prevention</h4>
-            </div>
-
-            <div class="grid grid-cols-3 py-8 text-center gap-y-8">
-                <div>
-                  <img src="./assets/imgs/icons/preventions/wear-mask.svg" class="mx-auto" alt="Wear Facemask">
-                  <small class="block mt-4">Wear facemask</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/preventions/wear-fs.svg" class="mx-auto" alt="Wear Faceshield">
-                  <small class="block mt-4">Wear faceshield</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/preventions/social-d.svg" class="mx-auto" alt="Social Distancing">
-                  <small class="block mt-4">Social Distancing</small>
-                </div>
-                <div class="col-span-full flex items-center justify-center gap-12">
-                  <div>
-                    <img src="./assets/imgs/icons/preventions/sanitize.svg" class="mx-auto" alt="Sanitize">
-                    <small class="block mt-4">Sanitize</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/preventions/wash-hands.svg" class="mx-auto" alt="Wash hands">
-                    <small class="block mt-4">Wash hands</small>
-                  </div>
-                </div>
-            </div>
-          </div>
-
-
-          <!-- Symptoms -->
-        <div class="dashboard-card">
-            <div class="text-center pb-12">
-              <h4 class="weight-bold">Symptoms</h4>
-            </div>
-
-            <p class="para">Most Common</p>
-              <div class="grid grid-cols-3 py-8 text-center gap-y-8">
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/dry-cough.svg" class="mx-auto" alt="Dry Cough">
-                    <small class="block mt-4">Dry Cough</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/fever.svg" class="mx-auto" alt="Fever">
-                    <small class="block mt-4">Fever</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/fatigue.svg" class="mx-auto" alt="Fatigue">
-                    <small class="block mt-4">Fatigue</small>
-                  </div>
-              </div>
-
-              <hr>
-
-              <p class="para pt-8">Less Common</p>
-                <div class="grid grid-cols-3 py-8 text-center gap-y-8">
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/dry-cough.svg" class="mx-auto" alt="Aches and Pains">
-                    <small class="block mt-4">Aches and Pains</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/sore-throat.svg" class="mx-auto" alt="Soar Throat">
-                    <small class="block mt-4">Soar Throat</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/diarrhea.svg" class="mx-auto" alt="Diarrhea">
-                    <small class="block mt-4">Diarrhea</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/conjunctivitis.svg" class="mx-auto" alt="Conjunctivitis">
-                    <small class="block mt-4">Conjunctivitis</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/headache.svg" class="mx-auto" alt="Headache">
-                    <small class="block mt-4">Headache</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/lost-of-taste.svg" class="mx-auto" alt="Loss of Taste">
-                    <small class="block mt-4">Loss of Taste</small>
-                  </div>
-                  <div class="col-span-full flex items-center justify-center gap-12">
-                    <div>
-                      <img src="./assets/imgs/icons/symptoms/lost-of-smell.svg" class="mx-auto" alt="Loss of smell">
-                      <small class="block mt-4">Loss of smell</small>
-                    </div>
-                    <div>
-                      <img src="./assets/imgs/icons/symptoms/skin-rash.svg" class="mx-auto" alt="Skin rash">
-                      <small class="block mt-4">Skin rash</small>
-                    </div>
-                  </div>
-                </div>
-          </div>
-
-
+</div>
         </div>
       </main>
 
