@@ -102,6 +102,11 @@
   background-image: url("../../assets/imgs/icons/preventions/blue-bg.jpg");
 }
 
+.bg_symptoms{
+  @extend .bg__layout;
+  background-image: url("../../assets/imgs/icons/symptoms/red-bg.jpg");
+}
+
 .sticky {
   position: fixed;
   top: 0;
