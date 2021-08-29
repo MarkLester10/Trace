@@ -83,19 +83,19 @@
 }
 
 .bg_community-safe{
-  background-image: url("../../assets/imgs/icons/bg-icons/blue-bg.svg");
+  background-image: url("../../assets/imgs/icons/bg-icons/blue-bg.jpg");
   @extend .bg__layout;
 }
+
 .bg_community-warning{
-  background-image: url("../../assets/imgs/icons/bg-icons/yellow-bg.svg");
+  background-image: url("../../assets/imgs/icons/bg-icons/yellow-bg.jpg");
   @extend .bg__layout;
 }
 
 .bg_community-danger{
-  background-image: url("../../assets/imgs/icons/bg-icons/red-bg.svg");
+  background-image: url("../../assets/imgs/icons/bg-icons/red-bg.jpg");
   @extend .bg__layout;
 }
-
 
 .bg_preventions{
   @extend .bg__layout;
