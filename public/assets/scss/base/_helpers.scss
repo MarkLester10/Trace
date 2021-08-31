@@ -113,3 +113,28 @@
   width: 100%;
   z-index: 10;
 }
+
+.covid--card{
+  padding:1rem;
+  border-radius:1rem;
+}
+
+.covid-card--total{
+  @extend .covid--card;
+  background-color: #F4594E;
+}
+
+.covid-card--active{
+  @extend .covid--card;
+  background-color: #8AB0FF;
+}
+
+.covid-card--recovered{
+  @extend .covid--card;
+  background-color: #95D6A4;
+}
+
+.covid-card--death{
+  @extend .covid--card;
+  background-color: #30323C;
+}

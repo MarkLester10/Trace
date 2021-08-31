@@ -125,199 +125,177 @@
           <small class="white">Your health declaration will expire in 2 days. Please update your information.</small>
         </div> -->
    
-        <div class="container mx-auto relative space-y-10">
-          
-           <div class="flex justify-end mt-10">
-              <a href="#" class="btn__success btn--sm shadow-lg">View History</a>
-           </div>
-
-          <!-- Location Update -->
+        <div class="container mx-auto">
+          <div class="w-full md:w-11/12 md:mx-auto relative space-y-10">
+              <div class="flex justify-end mt-10">
+                <a href="#" class="btn__success btn--sm shadow-lg">View History</a>
+              </div>
     
-            <div class="bg_community-safe rounded-2xl overflow-hidden">
-                <div class="p-8 relative">
+              <div class="grid gap-y-10 grid-cols-1 md:grid-cols-2 md:gap-x-6">
+                  <!-- Location Update -->
+                  <div class="grid grid-cols-1 gap-6">
+                    <div class="bg_community-safe rounded-2xl overflow-hidden">
+                        <div class="p-8 relative">
+                            <div>
+                                <h1 class="subtitle__text weight-bold">Laguna is under</h1>
+                                <h1 class="title__text mb-8"><strong>GCQ</strong></h1>
+                                <a href="#" class="btn__info btn--xs">Know More</a>
+                            </div>
+                            <div class="absolute top-0 -right-16">
+                              <img src="./assets/imgs/icons/bg-icons/girl.svg" class="w-80" alt="">
+                            </div>
+                        </div>
+                    </div>
+      
+                    <!-- Possible Exposures -->
+                    <div class="bg_safe dashboard-card flex items-center justify-between">
+                        <div>
+                          <h4 class="subtitle__text weight-bold white">Potential Exposure</h4>
+                          <small class="helper__color block mt-4">As of Aug 6 - Aug 20</small>
+                        </div>
+                        <div class="relative">
+                          <img src="./assets/imgs/icons/shield.svg" alt="">
+                          <h1 class="exposure-count">0</h1>
+                        </div>
+                    </div>
+                </div>
+      
+                  <!-- Covid Daily Updates -->
+                  <div class="grid grid-cols-2 gap-6">
+                    
+                    <div class="p-4 covid-card--total">
+                      <small class="weight-bold white">Total Cases</small>
+                      <h1 class="white text-4xl">10,000</h1>
+                      <div class="text-center white">
+                        <p class="opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <small>As of Aug 20</small>
+                      </div>
+                    </div>
+      
+                    <div class="p-4 covid-card--active">
+                      <small class="weight-bold white">Active Cases</small>
+                      <h1 class="white text-4xl">10,000</h1>
+                      <div class="text-center white">
+                        <p class="opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <small>As of Aug 20</small>
+                      </div>
+                    </div>
+      
+                    <div class="p-4 covid-card--recovered">
+                      <small class="weight-bold white">Recovered Cases</small>
+                      <h1 class="white text-4xl">10,000</h1>
+                      <div class="text-center white">
+                        <p class="opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <small>As of Aug 20</small>
+                      </div>
+                    </div>
+      
+                    <div class="p-4 covid-card--death">
+                      <small class="weight-bold white">Death Cases</small>
+                      <h1 class="white text-4xl">10,000</h1>
+                      <div class="text-center white">
+                        <p class="opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <small>As of Aug 20</small>
+                      </div>
+                    </div>
+                
+                  </div>
+              </div>
+    
+              <!-- Prevention -->
+              <div class="p-8 text-white bg_preventions rounded-2xl relative overflow-hidden shadow-lg">
+                <h4 class="weight-bold">Limit the score of <br> COVID-19</h4>
+                <small class="text-gray-200 text-md">Take proper precautions. <br> Don't panic & follow <br> these preventions</small>
+                <img src="./assets/imgs/icons/preventions/doc.png" class="w-80 absolute -top-10 -right-16" alt="">
+              </div>
+             
+              <div class="dashboard-card px-4 text-white bg-gradient-to-tr from-blue-400 to-blue-500">
+                <h1 class="subtitle__text weight-bold white text-center">Preventions</h1>
+                <div class="grid grid-cols-3 py-8 gap-4 text-center gap-y-8">
                     <div>
-                        <h1 class="subtitle__text weight-bold">Laguna is under</h1>
-                        <h1 class="title__text mb-8"><strong>GCQ</strong></h1>
-                        <a href="#" class="btn__info btn--xs">Know More</a>
+                      <img src="./assets/imgs/icons/preventions/wear-mask.svg" class="mx-auto" alt="Wear Facemask">
+                      <small class="block mt-4">Wear facemask</small>
                     </div>
-                    <div class="absolute top-0 -right-16">
-                      <img src="./assets/imgs/icons/bg-icons/girl.svg" class="w-80" alt="">
+                    <div>
+                      <img src="./assets/imgs/icons/preventions/wear-fs.svg" class="mx-auto" alt="Wear Faceshield">
+                      <small class="block mt-4">Wear faceshield</small>
                     </div>
-                </div>
-            </div>
-
-            <div class="bg_community-warning rounded-2xl overflow-hidden">
-                <div class="p-8 relative">
-                    <div class="w-10/12">
-                        <h1 class="subtitle__text weight-bold">Calamba is under</h1>
-                        <h1 class="title__text mb-8"><strong>MECQ</strong></h1>
-                        <a href="#" class="btn__primary btn--xs">Know More</a>
+                    <div>
+                      <img src="./assets/imgs/icons/preventions/social-d.svg" class="mx-auto" alt="Social Distancing">
+                      <small class="block mt-4">Social Distancing</small>
                     </div>
-                    <div class="absolute top-0 -right-16">
-                      <img src="./assets/imgs/icons/bg-icons/girl.svg" class="w-80" alt="">
+                    <div>
+                      <img src="./assets/imgs/icons/preventions/sanitize.svg" class="mx-auto" alt="Sanitize">
+                      <small class="block mt-4">Sanitize</small>
                     </div>
-                </div>
-            </div>
-
-            <div class="bg_community-danger rounded-2xl overflow-hidden">
-                <div class="p-8 relative">
-                    <div class="w-10/12">
-                        <h1 class="subtitle__text weight-bold">Calamba is under</h1>
-                        <h1 class="title__text mb-8"><strong>ECQ</strong></h1>
-                        <a href="#" class="btn__danger btn--xs">Know More</a>
-                    </div>
-                    <div class="absolute top-0 -right-16">
-                      <img src="./assets/imgs/icons/bg-icons/girl.svg" class="w-80" alt="">
+                    <div>
+                      <img src="./assets/imgs/icons/preventions/wash-hands.svg" class="mx-auto" alt="Wash hands">
+                      <small class="block mt-4">Wash hands</small>
                     </div>
                 </div>
-            </div>
-
-           <!-- Possible Exposures -->
-           <div class="bg_safe dashboard-card flex items-center justify-between">
-              <div>
-                <h4 class="subtitle__text weight-bold white">Potential Exposure</h4>
-                <small class="helper__color block mt-4">As of Aug 6 - Aug 20</small>
               </div>
-              <div class="relative">
-                <img src="./assets/imgs/icons/shield.svg" alt="">
-                <h1 class="exposure-count">0</h1>
+    
+              <!-- Symptoms -->
+              <div class="p-8 text-white bg_symptoms rounded-2xl relative overflow-hidden shadow-lg">
+                <h4 class="weight-bold py-6">All you need to <br>know about <br> COVID-19 <br>symptoms</h4>
+                <img src="./assets/imgs/icons/symptoms/docs.png" class="w-80 absolute -top-10 -right-10" alt="">
               </div>
-           </div>
-
-           <!-- Possible Exposures -->
-           <div class="bg_danger dashboard-card flex items-center justify-between">
-              <div>
-                <h4 class="subtitle__text weight-bold white">Potential Exposure</h4>
-                <small class="helper__color block mt-4">As of Aug 6 - Aug 20</small>
-              </div>
-              <div class="relative">
-                <img src="./assets/imgs/icons/shield-danger.svg" alt="">
-                <h1 class="exposure-count">9</h1>
-              </div>
-           </div>
-
-  
-           <!-- Covid Daily Updates -->
-           <div class="dashboard-card px-8 py-16 space-y-4">
-            <div class="text-center">
-              <h4 class="weight-bold">COVID-19 Updates</h4>
-              <small class="helper__color block mt-4">As of Aug 20, Today</small>
-              <h4 class="weight-bold mt-12">Philippines</h4>
-            </div>
-
-            <div class="dashboard-card bg-white space-y-8">
-                <div class="text-red-400">
-                  <small>Confirmed Cases</small>
-                  <h4 class="weight-bold">1,807,800</h4>
-                </div>
-                <hr>
-                <div class="text-green-400">
-                  <small>Recovered</small>
-                  <h4 class="weight-bold">1,807,800</h4>
-                </div>
-                <hr>
-                <div>
-                  <small>Deaths</small>
-                  <h4 class="weight-bold">32,000</h4>
-                </div>
-            </div>
-            
-
-           </div>
-
-          <!-- Prevention -->
-          <div class="p-8 text-white bg_preventions rounded-2xl relative overflow-hidden shadow-lg">
-            <h4 class="weight-bold">Limit the score of <br> COVID-19</h4>
-            <small class="text-gray-200 text-md">Take proper precautions. <br> Don't panic & follow <br> these preventions</small>
-            <img src="./assets/imgs/icons/preventions/doc.png" class="w-80 absolute -top-10 -right-16" alt="">
-          </div>
-         
-          <div class="dashboard-card px-4 text-white bg-gradient-to-tr from-blue-400 to-blue-500">
-            <h1 class="subtitle__text weight-bold white text-center">Preventions</h1>
-            <div class="grid grid-cols-3 py-8 gap-4 text-center gap-y-8">
-                <div>
-                  <img src="./assets/imgs/icons/preventions/wear-mask.svg" class="mx-auto" alt="Wear Facemask">
-                  <small class="block mt-4">Wear facemask</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/preventions/wear-fs.svg" class="mx-auto" alt="Wear Faceshield">
-                  <small class="block mt-4">Wear faceshield</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/preventions/social-d.svg" class="mx-auto" alt="Social Distancing">
-                  <small class="block mt-4">Social Distancing</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/preventions/sanitize.svg" class="mx-auto" alt="Sanitize">
-                  <small class="block mt-4">Sanitize</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/preventions/wash-hands.svg" class="mx-auto" alt="Wash hands">
-                  <small class="block mt-4">Wash hands</small>
-                </div>
-            </div>
-          </div>
-
-          <!-- Symptoms -->
-          <div class="p-8 text-white bg_symptoms rounded-2xl relative overflow-hidden shadow-lg">
-            <h4 class="weight-bold py-6">All you need to <br>know about <br> COVID-19 <br>symptoms</h4>
-            <img src="./assets/imgs/icons/symptoms/docs.png" class="w-80 absolute -top-10 -right-10" alt="">
-          </div>
-          <div class="dashboard-card px-4 text-white bg-gradient-to-tl from-red-300 to-red-400">
-            <h1 class="subtitle__text weight-bold white text-center mb-8">Symptoms</h1>
-            <p class="weight-bold para white">Most Common</p>
-              <div class="grid grid-cols-3 py-8 gap-4 text-center gap-y-8">
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/dry-cough.svg" class="mx-auto" alt="Dry Cough">
-                    <small class="block mt-4">Dry Cough</small>
+              <div class="dashboard-card px-4 text-white bg-gradient-to-tl from-red-300 to-red-400">
+                <h1 class="subtitle__text weight-bold white text-center mb-8">Symptoms</h1>
+                <p class="weight-bold para white">Most Common</p>
+                  <div class="grid grid-cols-3 py-8 gap-4 text-center gap-y-8">
+                      <div>
+                        <img src="./assets/imgs/icons/symptoms/dry-cough.svg" class="mx-auto" alt="Dry Cough">
+                        <small class="block mt-4">Dry Cough</small>
+                      </div>
+                      <div>
+                        <img src="./assets/imgs/icons/symptoms/fever.svg" class="mx-auto" alt="Fever">
+                        <small class="block mt-4">Fever</small>
+                      </div>
+                      <div>
+                        <img src="./assets/imgs/icons/symptoms/fatigue.svg" class="mx-auto" alt="Fatigue">
+                        <small class="block mt-4">Fatigue</small>
+                      </div>
                   </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/fever.svg" class="mx-auto" alt="Fever">
-                    <small class="block mt-4">Fever</small>
-                  </div>
-                  <div>
-                    <img src="./assets/imgs/icons/symptoms/fatigue.svg" class="mx-auto" alt="Fatigue">
-                    <small class="block mt-4">Fatigue</small>
+                  <hr>
+                <p class="weight-bold para white pt-8">Less Common</p>
+                  <div class="grid grid-cols-3 py-8 gap-4 text-center gap-y-8">
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/dry-cough.svg" class="mx-auto" alt="Aches and Pains">
+                      <small class="block mt-4">Aches and Pains</small>
+                    </div>
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/sore-throat.svg" class="mx-auto" alt="Soar Throat">
+                      <small class="block mt-4">Soar Throat</small>
+                    </div>
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/diarrhea.svg" class="mx-auto" alt="Diarrhea">
+                      <small class="block mt-4">Diarrhea</small>
+                    </div>
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/conjunctivitis.svg" class="mx-auto" alt="Conjunctivitis">
+                      <small class="block mt-4">Conjunctivitis</small>
+                    </div>
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/headache.svg" class="mx-auto" alt="Headache">
+                      <small class="block mt-4">Headache</small>
+                    </div>
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/lost-of-taste.svg" class="mx-auto" alt="Loss of Taste">
+                      <small class="block mt-4">Loss of Taste</small>
+                    </div>
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/lost-of-smell.svg" class="mx-auto" alt="Loss of smell">
+                      <small class="block mt-4">Loss of smell</small>
+                    </div>
+                    <div>
+                      <img src="./assets/imgs/icons/symptoms/skin-rash.svg" class="mx-auto" alt="Skin rash">
+                      <small class="block mt-4">Skin rash</small>
+                    </div>
                   </div>
               </div>
-              <hr>
-            <p class="weight-bold para white pt-8">Less Common</p>
-              <div class="grid grid-cols-3 py-8 gap-4 text-center gap-y-8">
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/dry-cough.svg" class="mx-auto" alt="Aches and Pains">
-                  <small class="block mt-4">Aches and Pains</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/sore-throat.svg" class="mx-auto" alt="Soar Throat">
-                  <small class="block mt-4">Soar Throat</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/diarrhea.svg" class="mx-auto" alt="Diarrhea">
-                  <small class="block mt-4">Diarrhea</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/conjunctivitis.svg" class="mx-auto" alt="Conjunctivitis">
-                  <small class="block mt-4">Conjunctivitis</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/headache.svg" class="mx-auto" alt="Headache">
-                  <small class="block mt-4">Headache</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/lost-of-taste.svg" class="mx-auto" alt="Loss of Taste">
-                  <small class="block mt-4">Loss of Taste</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/lost-of-smell.svg" class="mx-auto" alt="Loss of smell">
-                  <small class="block mt-4">Loss of smell</small>
-                </div>
-                <div>
-                  <img src="./assets/imgs/icons/symptoms/skin-rash.svg" class="mx-auto" alt="Skin rash">
-                  <small class="block mt-4">Skin rash</small>
-                </div>
-              </div>
-          </div>
 
+          </div>
         </div>
       </main>
 
@@ -334,7 +312,7 @@
     </div>
 
     <!-- side nav -->
-   <div class="mobile__nav--container" :class="{ 'active': open }" >
+   <div class="side_nav--container" :class="{ 'active': open }" >
     <div class="cross cursor-pointer absolute top-6 left-8"  @click="open = false">
       <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
   </div>
@@ -352,8 +330,6 @@
     </ul>
   </div>
    </div>
-
-
    <!-- mobile nav-2 -->
    <div class="mobile-navigation bg-white p-6 shadow-xl md:hidden">
       <ul class="relative">
@@ -376,6 +352,7 @@
         </li>
       </ul>
    </div>
+   
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
