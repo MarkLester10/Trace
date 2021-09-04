@@ -120,20 +120,24 @@
 
       <!-- main -->
       <main class="main__area mb-24 md:mb-0">
-        <!-- <div class="notification-banner">
-          <svg class="w-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-          <small class="white">Your health declaration will expire in 2 days. Please update your information.</small>
-        </div> -->
    
         <div class="container mx-auto overflow-x-hidden">
           <div class="w-full md:w-11/12 xl:w-9/12 md:mx-auto relative space-y-10">
+
+            <div class="notification-banner">
+              <svg class="w-48 md:w-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+              <p class="para white">Your health declaration will expire in 2 days. Please update your information.</p>
+            </div>
+
               <div class="flex justify-end mt-10">
                 <a href="#" class="btn__success btn--sm shadow-lg">View History</a>
               </div>
     
               <div class="grid gap-y-10 grid-cols-1 md:grid-cols-2 md:gap-x-6">
-                  <!-- Location Update -->
+                  
                   <div class="grid grid-cols-1 gap-6">
+
+                    <!-- Location Update -->
                     <div class="bg_community-safe rounded-2xl overflow-hidden">
                         <div class="p-8 relative">
                             <div>
@@ -158,6 +162,17 @@
                           <h1 class="exposure-count">0</h1>
                         </div>
                     </div>
+                    <div class="bg_danger dashboard-card flex items-center justify-between">
+                        <div>
+                          <h4 class="subtitle__text weight-bold white">Potential Exposure</h4>
+                          <small class="helper__color block mt-4">As of Aug 6 - Aug 20</small>
+                        </div>
+                        <div class="relative">
+                          <img src="./assets/imgs/icons/shield-danger.svg" alt="">
+                          <h1 class="exposure-count">12</h1>
+                        </div>
+                    </div>
+
                 </div>
       
                   <!-- Covid Daily Updates -->
