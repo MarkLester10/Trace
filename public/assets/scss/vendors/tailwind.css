@@ -2,28 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .input{
-    @apply w-full py-4 text-2xl;
-  }
+@layer components {
+	.input {
+		@apply w-full py-4 text-2xl;
+	}
 
-  .responsive-input{
-    @apply flex space-y-8 md:space-y-0 md:items-center flex-col md:flex-row md:space-x-8;
-  }
+	.responsive-input {
+		@apply flex space-y-8 md:space-y-0 md:items-center flex-col md:flex-row md:space-x-8;
+	}
 
-  .profile__card{
-    @apply bg-white p-12 text-center md:text-left rounded-3xl flex flex-col md:flex-row items-center justify-center md:items-start md:justify-between;
-  }
+	/* .profile__card {
+		@apply bg-white p-12 text-center md:text-left rounded-3xl flex flex-col md:flex-row items-center justify-center md:items-start md:justify-between;
+	} */
 
-  .notification-banner{
-    @apply bg-yellow-400 rounded-2xl p-6 space-x-4 flex items-start md:items-center mt-10;
-  }
+	.notification-banner {
+		@apply bg-yellow-400 rounded-2xl p-6 space-x-4 flex items-start md:items-center mt-10;
+	}
 
-  .exposure-count{
-    @apply text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl;
-  }
+	.exposure-count {
+		@apply text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl;
+	}
 
-  .dashboard-card{
-    @apply p-12 bg-gray-100 rounded-2xl shadow-lg;
-  }
+	.dashboard-card {
+		@apply p-12 bg-gray-100 rounded-2xl shadow-lg;
+	}
 }

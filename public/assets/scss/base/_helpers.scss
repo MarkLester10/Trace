@@ -1,140 +1,163 @@
-.weight-500{
-  font-weight: 500 !important;
+.weight-500 {
+	font-weight: 500 !important;
 }
 
-.weight-bold{
-  font-weight: 600 !important;
+.weight-bold {
+	font-weight: 600 !important;
 }
 
-.white{
-  color: $light-grey !important;
+.white {
+	color: $light-grey !important;
 }
-.red{
-  color: $primary-color !important;
+.red {
+	color: $primary-color !important;
 }
-.yellow{
-  color: $secondary-color !important;
-}
-
-.blue{
-  color: $blue !important;
+.yellow {
+	color: $secondary-color !important;
 }
 
-.app__border{
-  height: .1rem;
-  background-color:$mid-grey;
+.blue {
+	color: $blue !important;
 }
 
-.app__line{
-  border: 1px solid $mid-grey;
+.app__border {
+	height: 0.1rem;
+	background-color: $mid-grey;
 }
 
-.text__small{
-  font-size: 12px !important;
+.app__line {
+	border: 1px solid $mid-grey;
 }
 
-.helper__color{
- color: $mid-grey !important;
+.text__small {
+	font-size: 12px !important;
 }
 
-.bg-mid-grey{
-  background-color: $mid-grey !important;
+.helper__color {
+	color: $mid-grey !important;
+}
+
+.bg-mid-grey {
+	background-color: $mid-grey !important;
 }
 //container
 .container {
-  width: 90%;
-  margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(126, 126, 126, 0.644);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 0.5s ease;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(126, 126, 126, 0.644);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.5s ease;
 
-  &.active {
-    pointer-events: all;
-    opacity: 1;
-    visibility: visible;
-  }
+	&.active {
+		pointer-events: all;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.vaccine-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	// display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(126, 126, 126, 0.644);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.5s ease;
+	display: none;
+
+	&.active {
+		pointer-events: all;
+		opacity: 1;
+		visibility: visible;
+		display: flex;
+	}
 }
 
-.bg_safe{
-  background-image: linear-gradient(to right top, #051937, #003e65, #006783, #009188, #00b876);
+.bg_safe {
+	background-image: linear-gradient(to right top, #051937, #003e65, #006783, #009188, #00b876);
 }
 
-.bg_danger{
-  background-image: linear-gradient(to left top, #ea4c46, #ee5f5d, #f17273, #f28387, #f1959b);
+.bg_danger {
+	background-image: linear-gradient(to left top, #ea4c46, #ee5f5d, #f17273, #f28387, #f1959b);
 }
 
-.bg__layout{
-  background-repeat: no-repeat;
-  background-position:center center;
- background-size: cover;
+.bg__layout {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
-.bg_community-safe{
-  background-image: url("../../assets/imgs/icons/bg-icons/blue-bg.jpg");
-  @extend .bg__layout;
+.bg_community-safe {
+	background-image: url('../../assets/imgs/icons/bg-icons/blue-bg.jpg');
+	@extend .bg__layout;
 }
 
-.bg_community-warning{
-  background-image: url("../../assets/imgs/icons/bg-icons/yellow-bg.jpg");
-  @extend .bg__layout;
+.bg_community-warning {
+	background-image: url('../../assets/imgs/icons/bg-icons/yellow-bg.jpg');
+	@extend .bg__layout;
 }
 
-.bg_community-danger{
-  background-image: url("../../assets/imgs/icons/bg-icons/red-bg.jpg");
-  @extend .bg__layout;
+.bg_community-danger {
+	background-image: url('../../assets/imgs/icons/bg-icons/red-bg.jpg');
+	@extend .bg__layout;
 }
 
-.bg_preventions{
-  @extend .bg__layout;
-  background-image: url("../../assets/imgs/icons/preventions/green-bg.jpg");
+.bg_preventions {
+	@extend .bg__layout;
+	background-image: url('../../assets/imgs/icons/preventions/green-bg.jpg');
 }
 
-.bg_symptoms{
-  @extend .bg__layout;
-  background-image: url("../../assets/imgs/icons/symptoms/yellow-bg.jpg");
+.bg_symptoms {
+	@extend .bg__layout;
+	background-image: url('../../assets/imgs/icons/symptoms/yellow-bg.jpg');
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 }
 
-.covid--card{
-  padding:1rem;
-  border-radius:1rem;
+.covid--card {
+	padding: 1rem;
+	border-radius: 1rem;
 }
 
-.covid-card--total{
-  @extend .covid--card;
-  background-color: #F4594E;
+.covid-card--total {
+	@extend .covid--card;
+	background-color: #f4594e;
 }
 
-.covid-card--active{
-  @extend .covid--card;
-  background-color: #8AB0FF;
+.covid-card--active {
+	@extend .covid--card;
+	background-color: #8ab0ff;
 }
 
-.covid-card--recovered{
-  @extend .covid--card;
-  background-color: #95D6A4;
+.covid-card--recovered {
+	@extend .covid--card;
+	background-color: #95d6a4;
 }
 
-.covid-card--death{
-  @extend .covid--card;
-  background-color: #30323C;
+.covid-card--death {
+	@extend .covid--card;
+	background-color: #30323c;
 }
