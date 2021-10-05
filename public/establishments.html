@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trace</title>
+		<link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+		<link rel="stylesheet" href="./assets/css/main.min.css" />
+		<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+		<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+	</head>
+	<body x-data="{ open: false, isProfileOpen:false}">
+		<div class="grid__container">
+			<!-- header -->
+			<div class="banner flex items-center">
+				<div class="container mx-auto flex items-center justify-between">
+					<div>
+						<div class="block lg:hidden">
+							<a href="/">
+								<img src="./assets/imgs/logo.png" class="w-64" alt="Trace" />
+							</a>
+						</div>
+					</div>
+					<div class="hidden lg:block">
+						<ul class="flex flex-wrap items-center justify-center md:justify-items-auto space-x-8">
+							<li>
+								<a href="/">Home</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">FAQs</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+							<li class="relative">
+								<a href="javascript: void(0);" class="flex items-center space-x-2" @click="isProfileOpen = true">
+									<img src="./assets/imgs/img-placeholder.png" class="w-20 h-20 rounded-full object-cover ring ring-yellow-400 ring-offset-2" alt="" />
+									<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+									</svg>
+								</a>
+								<div class="bg-gray-50 shadow-md p-6 -bottom-56 -left-20 absolute z-50" x-show="isProfileOpen" @click.away="isProfileOpen = false">
+									<ul class="space-y-6">
+										<li>
+											<a href="dashboard.html" class="hover:text-yellow-400">Dashboard</a>
+										</li>
+										<li>
+											<a href="#" class="hover:text-yellow-400">Profile</a>
+										</li>
+										<li>
+											<a href="#" class="hover:text-yellow-400">Logout</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="block lg:hidden cursor-pointer" @click="open = true">
+						<svg class="w-16 h-16 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-- sidebar -->
+			<div class="sidebar">
+				<div class="container mx-auto relative h-full">
+					<div class="sidebar__logo">
+						<a href="/">
+							<img src="./assets/imgs/logo.png" class="w-9/12 object-cover" alt="Trace" />
+						</a>
+					</div>
+					<p class="para mt-12 white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga odio aliquam laboriosam voluptatum quia, mollitia ipsa incidunt nisi, ex aliquid quisquam dolor expedita autem laudantium voluptates</p>
+					<div class="absolute bottom-0 right-6">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-40" viewBox="0 0 172 130">
+							<g id="Group_2" data-name="Group 2" transform="translate(-288 -897.975)">
+								<circle id="Ellipse_1" data-name="Ellipse 1" cx="7" cy="7" r="7" transform="translate(288 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_10" data-name="Ellipse 10" cx="7" cy="7" r="7" transform="translate(288 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_15" data-name="Ellipse 15" cx="7" cy="7" r="7" transform="translate(288 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_20" data-name="Ellipse 20" cx="7" cy="7" r="7" transform="translate(288 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_2" data-name="Ellipse 2" cx="7" cy="7" r="7" transform="translate(327 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_9" data-name="Ellipse 9" cx="7" cy="7" r="7" transform="translate(327 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_14" data-name="Ellipse 14" cx="7" cy="7" r="7" transform="translate(327 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_19" data-name="Ellipse 19" cx="7" cy="7" r="7" transform="translate(327 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_3" data-name="Ellipse 3" cx="7" cy="7" r="7" transform="translate(367 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_8" data-name="Ellipse 8" cx="7" cy="7" r="7" transform="translate(367 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_11" data-name="Ellipse 11" cx="7" cy="7" r="7" transform="translate(367 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_16" data-name="Ellipse 16" cx="7" cy="7" r="7" transform="translate(367 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_4" data-name="Ellipse 4" cx="7" cy="7" r="7" transform="translate(406 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_6" data-name="Ellipse 6" cx="7" cy="7" r="7" transform="translate(406 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_12" data-name="Ellipse 12" cx="7" cy="7" r="7" transform="translate(406 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_17" data-name="Ellipse 17" cx="7" cy="7" r="7" transform="translate(406 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_5" data-name="Ellipse 5" cx="7" cy="7" r="7" transform="translate(446 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_7" data-name="Ellipse 7" cx="7" cy="7" r="7" transform="translate(446 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_13" data-name="Ellipse 13" cx="7" cy="7" r="7" transform="translate(446 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_18" data-name="Ellipse 18" cx="7" cy="7" r="7" transform="translate(446 1013.975)" fill="#bbcbd8" />
+							</g>
+						</svg>
+					</div>
+				</div>
+				<div class="absolute bottom-0 left-0 w-96">
+					<img src="./assets/imgs/folks.png" class="h-full w-full" alt="" />
+				</div>
+			</div>
+
+			<!-- main -->
+			<main class="main__area">
+				<!-- <div class="bg-yellow-400 absolute top:0 lg:top-40 right-0 left-0 mx-auto w-full lg:w-9/12 lg:rounded-t-3xl h-96 lg:h-2/6 block">
+					<div class="relative w-full h-full hidden lg:block">
+						<img src="./assets/imgs/woman.svg" class="lg:block hidden z-10 absolute md:w-40 bottom-0 left-0" alt="" />
+					</div>
+				</div> -->
+				<div class="container mx-auto relative w-full pb-32">
+					<div class="flex items-center justify-between">
+						<a href="">
+							<svg class="w-14 h-14 font-black lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+							</svg>
+						</a>
+						<h1 class="subtitle__text my-12 text-center">Establishments</h1>
+						<div></div>
+					</div>
+
+					<div class="mx-auto w-full max-w-full flex flex-col" style="height: 60vh">
+						<div class="bg-green-400 h-3/5 rounded-xl border-2 border-yellow-400 w-full md:w-4/5 mx-auto"></div>
+						<div class="bg-transparent w-full lg:w-10/12 p-0 mx-auto relative lg:shadow-none transform -translate-y-20">
+							<div class="bg-gray-light p-12 mx-5 md:mx-44 text-center lg:text-left rounded-3xl flex flex-col-reverse md:flex-row items-center md:justify-around justify-center lg:items-center shadow-md relative lg:border lg:border-black">
+								<div class="p-4 space-y-8 text-center">
+									<div class="space-y-4 text-center md:text-left">
+										<div class="flex-1 space-y-6">
+											<p class="text-2xl lg:text-left font-bold">You went to <span class="text-yellow-500">Establishment Name</span></p>
+										</div>
+										<div class="flex-1 space-y-6">
+											<p class="text-lg items-center lg:text-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+										</div>
+										<div class="flex-1 space-y-6">
+											<p class="text-xl items-center lg:text-left italic">July 15th 2021, Sunday, 7:41 PM</p>
+										</div>
+									</div>
+								</div>
+								<div class="absolute md:relative w-full h-full flex flex-col-reverse items-center md:items-end justify-end md:justify-end">
+									<img src="./assets/imgs/qrcode.svg" class="w-24 h-24 md:w-36 md:h-36 rounded-full object-cover ring ring-yellow-400 transform -translate-y-10 md:-translate-y-0" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<!-- footer -->
+			<footer class="footer__area">
+				<div class="container mx-auto flex flex-col md:flex-row items-center text-center md:justify-between">
+					<p class="para">&copy; 2020 - 2021 Trace. All rights reserved.</p>
+					<ul class="flex items-center space-x-6 mt-2 md:mt-0">
+						<li><a href="#">Terms and Conditions</a></li>
+						<li><a href="#">Policy</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
