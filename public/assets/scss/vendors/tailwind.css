@@ -26,4 +26,16 @@
 	.dashboard-card {
 		@apply p-12 bg-gray-100 rounded-2xl shadow-lg;
 	}
+
+	.health-checkbox {
+		@apply rounded-full text-yellow-500 focus:ring-0 focus:outline-none;
+	}
+
+	.health-input {
+		@apply absolute flex top-0 bottom-0 left-6 mt-auto mb-auto rounded-full text-yellow-500 focus:ring-0 focus:outline-none focus:border-transparent transition delay-100;
+	}
+
+	.health-label {
+		@apply w-full flex items-center gap-4 p-4 m-1 rounded-2xl bg-white bg-opacity-90 border border-gray-200 backdrop-blur-2xl hover:bg-opacity-75 transition cursor-pointer ;
+	}
 }

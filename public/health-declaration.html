@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trace</title>
+		<link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+		<link rel="stylesheet" href="./assets/css/main.min.css" />
+		<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+		<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+	</head>
+
+	<style>
+		input[type='radio']:checked + label > div > span {
+			font-weight: 600;
+		}
+		input[type='checkbox']:checked + span {
+			font-weight: 600;
+		}
+		input[type='radio']:checked + label {
+			border-color: rgba(245, 158, 11, 1);
+		}
+	</style>
+
+	<body x-data="{ open: false, isProfileOpen:false}">
+		<div class="grid__container">
+			<!-- header -->
+			<div class="banner flex items-center">
+				<div class="container mx-auto flex items-center justify-between">
+					<div>
+						<div class="block lg:hidden">
+							<a href="/">
+								<img src="./assets/imgs/logo.png" class="w-64" alt="Trace" />
+							</a>
+						</div>
+					</div>
+					<div class="hidden lg:block">
+						<ul class="flex flex-wrap items-center justify-center md:justify-items-auto space-x-8">
+							<li>
+								<a href="/">Home</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">FAQs</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+							<li class="relative">
+								<a href="javascript: void(0);" class="flex items-center space-x-2" @click="isProfileOpen = true">
+									<img src="./assets/imgs/img-placeholder.png" class="w-20 h-20 rounded-full text-yellow-500 focus:ring-0 object-cover ring ring-yellow-400 ring-offset-2" alt="" />
+									<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+									</svg>
+								</a>
+								<div class="bg-gray-50 shadow-md p-6 -bottom-56 -left-20 absolute z-50" x-show="isProfileOpen" @click.away="isProfileOpen = false">
+									<ul class="space-y-6">
+										<li>
+											<a href="dashboard.html" class="hover:text-yellow-400">Dashboard</a>
+										</li>
+										<li>
+											<a href="#" class="hover:text-yellow-400">Profile</a>
+										</li>
+										<li>
+											<a href="#" class="hover:text-yellow-400">Logout</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="block lg:hidden cursor-pointer" @click="open = true">
+						<svg class="w-16 h-16 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-- sidebar -->
+			<div class="sidebar">
+				<div class="container mx-auto relative h-full">
+					<div class="sidebar__logo">
+						<a href="/">
+							<img src="./assets/imgs/logo.png" class="w-9/12 object-cover" alt="Trace" />
+						</a>
+					</div>
+					<p class="para mt-12 white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga odio aliquam laboriosam voluptatum quia, mollitia ipsa incidunt nisi, ex aliquid quisquam dolor expedita autem laudantium voluptates</p>
+					<div class="absolute bottom-0 right-6">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-40" viewBox="0 0 172 130">
+							<g id="Group_2" data-name="Group 2" transform="translate(-288 -897.975)">
+								<circle id="Ellipse_1" data-name="Ellipse 1" cx="7" cy="7" r="7" transform="translate(288 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_10" data-name="Ellipse 10" cx="7" cy="7" r="7" transform="translate(288 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_15" data-name="Ellipse 15" cx="7" cy="7" r="7" transform="translate(288 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_20" data-name="Ellipse 20" cx="7" cy="7" r="7" transform="translate(288 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_2" data-name="Ellipse 2" cx="7" cy="7" r="7" transform="translate(327 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_9" data-name="Ellipse 9" cx="7" cy="7" r="7" transform="translate(327 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_14" data-name="Ellipse 14" cx="7" cy="7" r="7" transform="translate(327 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_19" data-name="Ellipse 19" cx="7" cy="7" r="7" transform="translate(327 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_3" data-name="Ellipse 3" cx="7" cy="7" r="7" transform="translate(367 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_8" data-name="Ellipse 8" cx="7" cy="7" r="7" transform="translate(367 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_11" data-name="Ellipse 11" cx="7" cy="7" r="7" transform="translate(367 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_16" data-name="Ellipse 16" cx="7" cy="7" r="7" transform="translate(367 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_4" data-name="Ellipse 4" cx="7" cy="7" r="7" transform="translate(406 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_6" data-name="Ellipse 6" cx="7" cy="7" r="7" transform="translate(406 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_12" data-name="Ellipse 12" cx="7" cy="7" r="7" transform="translate(406 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_17" data-name="Ellipse 17" cx="7" cy="7" r="7" transform="translate(406 1013.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_5" data-name="Ellipse 5" cx="7" cy="7" r="7" transform="translate(446 897.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_7" data-name="Ellipse 7" cx="7" cy="7" r="7" transform="translate(446 936.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_13" data-name="Ellipse 13" cx="7" cy="7" r="7" transform="translate(446 974.975)" fill="#bbcbd8" />
+								<circle id="Ellipse_18" data-name="Ellipse 18" cx="7" cy="7" r="7" transform="translate(446 1013.975)" fill="#bbcbd8" />
+							</g>
+						</svg>
+					</div>
+				</div>
+				<div class="absolute bottom-0 left-0 w-96">
+					<img src="./assets/imgs/folks.png" class="h-full w-full" alt="" />
+				</div>
+			</div>
+
+			<!-- main -->
+			<main class="main__area">
+				<div class="container mx-auto relative w-full pb-32">
+					<form action="">
+						<h1 class="subtitle__text my-12 text-center">Health Declaration</h1>
+						<!-- Personal Information -->
+
+						<section class="app__line p-6 md:p-36 w-full md:w-9/12 bg-white mx-auto mt-12">
+							<label class="weight-500 text-left mb-10">Do you experience or experienced any of the following in the last 14 days?</label>
+
+							<div class="mt-2 flex w-full flex-wrap lg:flex-nowrap lg:flex-column">
+								<div class="mt-2 flex w-full flex-wrap">
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="fever" value="fever" />
+										<span class="ml-2">Fever</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="headache" value="headache" />
+										<span class="ml-2">Headache</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="cough" value="cough" />
+										<span class="ml-2">Cough and/or Colds</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="diarrhea" value="diarrhea" />
+										<span class="ml-2">Diarrhea</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="bodypain" value="bodypain" />
+										<span class="ml-2">Body Pains</span>
+									</label>
+								</div>
+								<div class="mt-2 flex w-full flex-wrap">
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="taste" value="taste" />
+										<span class="ml-2">Loss of taste or smell</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="sore throat" value="sore throat" />
+										<span class="ml-2">Sore Throat</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="breathing" value="breathing" />
+										<span class="ml-2">Difficulty of breathing</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="fatigue" value="fatigue" />
+										<span class="ml-2">Fatigue/Tiredness</span>
+									</label>
+									<label class="health-label" style="flex: 1 1 20em">
+										<input type="checkbox" class="health-checkbox" name="none" value="none" />
+										<span class="ml-2">None of the Above</span>
+									</label>
+								</div>
+							</div>
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">Have you had face-to-face contact with a probable or confirmed COVID-19 case within 1 meter and for more than 15 minutes for the past 14 days?</label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<div class="relative w-full">
+									<input type="radio" id="f2f" name="f2f" value="yes" class="health-input" />
+									<label for="f2f" class="health-label">
+										<div>
+											<span class="ml-10">Yes</span>
+										</div>
+									</label>
+								</div>
+								<div class="relative w-full">
+									<input type="radio" id="f2fno" name="f2f" value="no" class="health-input" />
+									<label for="f2fno" class="health-label">
+										<div>
+											<span class="ml-10">No</span>
+										</div>
+									</label>
+								</div>
+							</div>
+
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">Have you provided direct care for a patient with probable or confirmed COVID-19 case without using proper "Personal Protective Equipment (PPE)" for the past 14 days?</label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<div class="relative w-full">
+									<input type="radio" id="directcare" name="directcare" value="yes" class="health-input" />
+									<label for="directcare" class="health-label">
+										<div>
+											<span class="ml-10">Yes</span>
+										</div>
+									</label>
+								</div>
+								<div class="relative w-full">
+									<input type="radio" id="directcareno" name="directcare" value="no" class="health-input" />
+									<label for="directcareno" class="health-label">
+										<div>
+											<span class="ml-10">No</span>
+										</div>
+									</label>
+								</div>
+							</div>
+
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">Have you traveled outside the Philippines in the last 14 days?</label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<div class="relative w-full">
+									<input type="radio" id="traveled" name="traveled" value="yes" class="health-input" />
+									<label for="traveled" class="health-label">
+										<div>
+											<span class="ml-10">Yes</span>
+										</div>
+									</label>
+								</div>
+								<div class="relative w-full">
+									<input type="radio" id="traveledno" name="traveled" value="no" class="health-input" />
+									<label for="traveledno" class="health-label">
+										<div>
+											<span class="ml-10">No</span>
+										</div>
+									</label>
+								</div>
+							</div>
+
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">Have you traveled outside the current city/municipality where you reside?</label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<div class="relative w-full">
+									<input type="radio" id="travel" name="travel" value="yes" class="health-input" />
+									<label for="travel" class="health-label">
+										<div>
+											<span class="ml-10">Yes</span>
+										</div>
+									</label>
+								</div>
+								<div class="relative w-full">
+									<input type="radio" id="travelno" name="travel" value="no" class="health-input" />
+									<label for="travelno" class="health-label">
+										<div>
+											<span class="ml-10">No</span>
+										</div>
+									</label>
+								</div>
+							</div>
+
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">If yes, please specify where you went to.</label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<label class="health-label" style="flex: 1 1 20em">
+									<input name="region" value="" type="text" class="form-input input border-none focus:outline-none focus:ring-0 focus:border-transparent" placeholder="Region" />
+								</label>
+								<label class="health-label" style="flex: 1 1 20em">
+									<input name="province" value="" type="text" class="form-input input border-none focus:outline-none focus:ring-0 focus:border-transparent" placeholder="Province" />
+								</label>
+								<label class="health-label" style="flex: 1 1 20em">
+									<input name="municipality" value="" type="text" class="form-input input border-none focus:outline-none focus:ring-0 focus:border-transparent" placeholder="Municipality" />
+								</label>
+							</div>
+
+							<div class="app__border my-12"></div>
+						</section>
+
+						<!-- Vaccine Information -->
+						<h1 class="subtitle__text mt-24 my-12 text-center">Vaccine Information</h1>
+						<section class="app__line p-6 md:p-36 w-full md:w-9/12 bg-white mx-auto">
+							<label class="weight-500 text-left mb-10">Are you vaccinated?</label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<div class="relative w-full">
+									<input type="radio" id="vaccinated" name="vaccinated" value="yes" class="health-input" />
+									<label for="vaccinated" class="health-label">
+										<div>
+											<span class="ml-10">Yes</span>
+										</div>
+									</label>
+								</div>
+								<div class="relative w-full">
+									<input type="radio" id="vaccinatedno" name="vaccinated" value="no" class="health-input" />
+									<label for="vaccinatedno" class="health-label">
+										<div>
+											<span class="ml-10">No</span>
+										</div>
+									</label>
+								</div>
+							</div>
+
+							<div class="my-12"></div>
+
+							<label class="weight-500 text-left mb-10">Vaccine Brand</label>
+							<select name="vaccine" class="form-input input focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent mt-5 rounded-2xl border-gray-200">
+								<option value="Sinovac" selected>Sinovac</option>
+								<option value="Sinovac">Moderna</option>
+								<option value="Sinovac">Pfizer</option>
+							</select>
+
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">Number of dose</label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<div class="relative w-full">
+									<input type="radio" id="doses" name="doses" value="yes" class="health-input" />
+									<label for="doses" class="health-label">
+										<div>
+											<span class="ml-10">1</span>
+										</div>
+									</label>
+								</div>
+								<div class="relative w-full">
+									<input type="radio" id="doses2" name="doses" value="no" class="health-input" />
+									<label for="doses2" class="health-label">
+										<div>
+											<span class="ml-10">2</span>
+										</div>
+									</label>
+								</div>
+							</div>
+
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">Where did you get vaccinated? <span class="text-gray-600 italic">( Healthcare/Healthcare Professional)</span></label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<label class="health-label" style="flex: 1 1 20em">
+									<input name="healthcare" value="" type="text" class="form-input input border-none focus:outline-none focus:ring-0 focus:border-transparent" />
+								</label>
+							</div>
+
+							<div class="app__border my-12"></div>
+
+							<label class="weight-500 text-left mb-10">When did you get vaccinated? <span class="text-gray-600 italic">(Date of 2ⁿᵈ dose if vaccine is completed)</span></label>
+
+							<div class="mt-2 flex w-full flex-wrap">
+								<label class="health-label" style="flex: 1 1 20em"> <input name="healthcare" value="" type="date" class="form-input input border-none focus:outline-none focus:ring-0 focus:border-transparent" /> </label>
+							</div>
+
+							<div class="app__border my-12"></div>
+
+							<div class="space-y-4 relative flex flex-col items-center">
+								<label class="weight-500">Proof of Vaccination</label>
+
+								<label class="relative w-4/5 flex flex-col items-center px-4 py-6 bg-white rounded-md shadow-md border-dashed border-gray-400 border-2 cursor-pointer ease-linear transition-all duration-150 h-96 justify-center">
+									<svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+									</svg>
+
+									<input type="file" id="file" class="hidden" />
+									<button type="button" class="focus:outline-none focus:border-0 absolute top-4 right-4" onclick="document.getElementById('file-name').textContent = 'Choose Image'">
+										<svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										</svg>
+									</button>
+								</label>
+								<label for="file" id="file-name" class="flex items-center justify-center w-4/5 md:w-2/4 border bg-yellow-500 hover:bg-yellow-600 transition cursor-pointer text-center p-2 rounded-full text-white">Choose Image</label>
+							</div>
+						</section>
+
+						<!-- Form Action -->
+						<section class="relative flex justify-center md:justify-end p-6 w-full md:w-11/12 mx-auto">
+							<div class="mt-16 md:mr-28 text-center">
+								<button class="btn__primary rounded-full w-full md:w-auto" type="submit" style="border-radius: 50px !important">Submit</button>
+							</div>
+
+							<svg class="absolute right-16 md:right-14" xmlns="http://www.w3.org/2000/svg" width="97.873" height="147.722" viewBox="0 0 107.873 167.722">
+								<g id="humaaan-3" transform="translate(0 0)">
+									<g id="Bottom_Standing_Sprint" data-name="Bottom/Standing/Sprint" transform="translate(0 59.086)">
+										<path
+											id="Leg"
+											d="M42.253,75.025c-7.779-6.345-4.714-62.109-5.232-62.81Q36.675,11.747,0,4.317L1.064,0Q43.976,2.055,46.471,5.24,50.044,9.8,55.231,56.3Z"
+											transform="matrix(-0.574, -0.819, 0.819, -0.574, 33.227, 88.992)"
+											fill="#b28b67"
+											fill-rule="evenodd"
+										/>
+										<path
+											id="Pant"
+											d="M0,7.85,1.872.9C23.2-1.595,37.258,1.415,42.2,6.12q4.94,4.7,8.782,50.926L37.1,76.873C18.58,62.9,29.716,17.021,29.245,15.973S17.527,14.115,0,7.85Z"
+											transform="matrix(-0.574, -0.819, 0.819, -0.574, 29.242, 85.853)"
+											fill="#2f3676"
+											fill-rule="evenodd"
+										/>
+										<g id="Accessories_Shoe_Flat-Sneaker" data-name="Accessories/Shoe/Flat-Sneaker" transform="translate(40.983 91.117) rotate(160)">
+											<path
+												id="shoe"
+												d="M.685,5.962A8.768,8.768,0,0,1,0,3.224,20.492,20.492,0,0,1,.368,0H23.4q.9,2.968-1.037,3.2t-3.214.427L8.445,8.4A.408.408,0,0,1,7.906,8.2l0-.011L7.213,6.518A7.344,7.344,0,0,0,4.3,5.683a6.591,6.591,0,0,0-2.512.735h0a.817.817,0,0,1-1.083-.4Q.7,5.989.685,5.962Z"
+												transform="translate(0 0)"
+												fill="#e4e4e4"
+												fill-rule="evenodd"
+											/>
+										</g>
+										<path id="Leg-2" data-name="Leg" d="M46.286,0,67.418,50.536,88.187,93.259h-4.9L29.676,0Z" transform="translate(18.708 11.347)" fill="#997659" fill-rule="evenodd" />
+										<g id="Accessories_Shoe_Flat-Sneaker-2" data-name="Accessories/Shoe/Flat-Sneaker" transform="translate(84.187 100.195)">
+											<path
+												id="shoe-2"
+												data-name="shoe"
+												d="M24.084,23.42a8.769,8.769,0,0,1,.685,2.738,20.492,20.492,0,0,1-.368,3.224H1.368q-.9-2.968,1.037-3.2t3.214-.427l10.706-4.773a.408.408,0,0,1,.539.207l0,.011.688,1.669a7.344,7.344,0,0,0,2.91.836,6.591,6.591,0,0,0,2.512-.735h0a.817.817,0,0,1,1.083.4Q24.073,23.392,24.084,23.42Z"
+												transform="translate(-1.083 -20.941)"
+												fill="#e4e4e4"
+												fill-rule="evenodd"
+											/>
+										</g>
+										<path id="Pant-2" data-name="Pant" d="M93.053,84.384,82.165,86.418C73.746,74.088,38.514,23.534,34.651,0H58.89C71.791,17.013,85.028,71.85,93.053,84.384Z" transform="translate(11.966 11.347)" fill="#5c63ab" fill-rule="evenodd" />
+									</g>
+									<g id="Head_Front_Wavy" data-name="Head/Front/Wavy" transform="translate(79.536 31.812) rotate(166)">
+										<g id="Head" transform="translate(15.518 0)">
+											<path
+												id="Path_5"
+												data-name="Path 5"
+												d="M3.374,15.587A10.909,10.909,0,0,0,.432,23.466c.613,8.662,12.779,6.757,15.145,2.385S17.662,10.389,14.6,9.608c-1.22-.312-3.818.452-6.463,2.032L9.8,0H0Z"
+												transform="translate(0 0)"
+												fill="#b28b67"
+												fill-rule="evenodd"
+											/>
+										</g>
+										<path
+											id="hair"
+											d="M32.02,12.352a11.045,11.045,0,0,1-.526,1.732,8.087,8.087,0,0,1-1.032,1.9,14.422,14.422,0,0,1-2.727,2.933,8.966,8.966,0,0,1-6.6,2.1,6.807,6.807,0,0,1-3.31-1.335c-.883-.673-1.733-1.663-2.877-1.734-1.245-.077-2.386,1.011-3.384,1.684a9.136,9.136,0,0,1-3.638,1.525,6.077,6.077,0,0,1-5.792-2.17c-1.616-1.907-2.791-4.7-1.73-7.23a3.241,3.241,0,0,1,.815-1.194c.334-.3.844-.621.98-1.1.144-.511-.286-1.17-.452-1.632a4.764,4.764,0,0,1-.365-2.072A5.329,5.329,0,0,1,3.035,2.681a5.508,5.508,0,0,1,2.849-1.45,8.064,8.064,0,0,1,2.143-.164,6.724,6.724,0,0,1,1.015.2.924.924,0,0,0,.807-.195A6.668,6.668,0,0,1,14.118.026a6.9,6.9,0,0,1,3.823,1.29c1.167.971,1.144,2.311.869,3.742.291-.143,1.1-.231.615.338a2.609,2.609,0,0,1-.795.45,2.888,2.888,0,0,0-.795.606c-.892,1.017.009,3.088,1.131,3.429,1.666.507,2.039-1.829,3.229-2.433.684-.347,1.4.127,1.912.612a7.58,7.58,0,0,1,1.558,2.386c.333.721.642,1.452.981,2.17.158.335.707,1.282.431,1.661a5.169,5.169,0,0,0,3.551-.9,2.415,2.415,0,0,0,.975-1.031c.049-.1.154-.4.287-.413.247-.023.155.276.13.419"
+											transform="translate(0 11.536)"
+											fill="#191847"
+											fill-rule="evenodd"
+										/>
+									</g>
+									<g id="Body_Hoodie" data-name="Body/Hoodie" transform="matrix(-1, 0.017, -0.017, -1, 96.077, 101.921)">
+										<path
+											id="Skin"
+											d="M63.959,36.144l13.027-9.519a35.158,35.158,0,0,0,8.855-3.541c.56-.507,1.237-1.536-1.085-1.358s-4.773.261-5.093-.528,1.085-1.73.437-2.794q-.648-1.064-6.12,5.333l-12.9,5.323Zm-50.015-.329,8.534-.034q-7.9-25.39-8.534-26.943C13,6.508,15,2.96,15.854,1.052c-2.785-1.24-2.488,3.352-6,1.726C6.645,1.294,4.206-1.4.5.879c-.455.28-.955,1.333.251,2.156,3,2.05,7.335,5.638,7.92,6.82Q9.869,12.27,13.944,35.816Z"
+											transform="translate(0 0)"
+											fill="#b28b67"
+											fill-rule="evenodd"
+										/>
+										<path id="Coat-Back" d="M0,45.36l3.465.908C17.5,36.19,24.746,15.1,41.744,5.086L38.308,0C10.254.991,1.075,26.68,0,45.36Z" transform="translate(34.242 26.262) rotate(-5)" fill="#e87613" fill-rule="evenodd" />
+										<path id="Shirt" d="M0,0H31.245c1.428,0,1.159,2.051.952,3.087-2.382,11.947-11.68,24.826-11.68,41.833L11.5,46.326C4.05,34.4,1.472,19.707,0,0Z" transform="translate(22.803 27.29)" fill="#dde3e9" fill-rule="evenodd" />
+										<path
+											id="Coat-Front"
+											d="M14.6,51.666a5.148,5.148,0,0,0-3.11,2.62C8.195,60.2,9.385,63.457,12.9,64.527s6.66-1.134,12.269-1.134a5.671,5.671,0,0,0,.838-.057l2.821-.16q12.142-40.95,6.7-54.642H10.938A83.263,83.263,0,0,0,6.755,0H.054Q-.892,30.437,14.6,51.666Z"
+											transform="translate(8.455 10.223)"
+											fill="#ff9b21"
+											fill-rule="evenodd"
+										/>
+										<path id="Shade" d="M5.355,14.021Q6.515,4.361,9.126,0H0Q2.549,5.916,5.355,14.021Z" transform="translate(19.393 18.757)" fill="rgba(0,0,0,0.1)" fill-rule="evenodd" />
+									</g>
+								</g>
+							</svg>
+						</section>
+					</form>
+				</div>
+			</main>
+
+			<!-- footer -->
+			<footer class="footer__area">
+				<div class="container mx-auto flex flex-col md:flex-row items-center text-center md:justify-between">
+					<p class="para">&copy; 2020 - 2021 Trace. All rights reserved.</p>
+					<ul class="flex items-center space-x-6 mt-2 md:mt-0">
+						<li><a href="#">Terms and Conditions</a></li>
+						<li><a href="#">Policy</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./assets/js/main.js"></script>
+		<script>
+			document.querySelector('#file').onchange = function () {
+				document.querySelector('#file-name').textContent = this.files[0].name;
+			};
+		</script>
+	</body>
+</html>
